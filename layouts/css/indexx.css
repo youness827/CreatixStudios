@@ -1,0 +1,158 @@
+.carousel-item img{
+width: 100%;
+height:50%;
+z-index: 25;
+
+
+}
+.carousel-item{
+    height: 100%;
+}
+.carousel-caption{
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    text-overflow: hidden;
+    text-shadow: rgb(113, 204, 235);
+    color:rgb(255, 255, 255);
+    z-index: 27;
+}
+.carousel-inner{
+    height: 100%;
+}
+
+
+/* Body index*/
+.bodyIndex .contenu h2 {
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    overflow: hidden;
+  color: rgb(37, 42, 97);
+
+    
+} 
+
+
+.bodyIndex .contenu p {
+    text-align: left;
+    font-weight: 500;
+   font-size: 20px;
+   color:rgb(97 93 93 / 82%);
+   text-transform: lowercase;
+   overflow: hidden;
+}
+/* card - text */
+
+.card-text{
+    font-size: 20px;
+    word-spacing: 1px;
+}
+
+.bodyIndex h5{
+    font-weight: 700;
+    text-transform:lowercase;
+    color:rgb(37, 42, 97);
+}
+
+.bodyIndex .card{
+    border-radius: 14px;
+    cursor: pointer;
+    
+}
+.bg-body{
+    background-color: whitesmoke;
+}
+
+.bodyIndex .notreexpertise .contenu h1 {
+    text-align:center;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: #def4e4 !important;
+    padding: 10px;
+  
+   
+}
+
+.bodyIndex .notreexpertise .contenu p {
+
+    font-size: 21px;
+    overflow: hidden;
+    color: #cfe2f1 !important;
+    padding: 10px;
+   
+   
+}
+
+
+.notreexpertise{
+    height:auto;
+    width:100%;
+    padding: 20px;
+    background-color: #34495e !important;
+   
+
+}
+
+
+p,h1,h2,h3,h4,h5,h6{
+    overflow: hidden;
+}
+.btn1,.btn2,.btn3,.btn4{
+    text-align: left;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    font-family:'Vollkorn', serif;
+    font-size: 16px;
+
+  
+    
+}
+.notreservice{
+    background-color: #d6d1d61a;
+    padding: 30px;
+    width: 100%;
+
+}
+
+ul.a{
+    font-weight: 700;
+    list-style-type:none;
+ 
+
+}
+
+
+
+/*button back to top*/
+.to-top{
+
+    background-color: rgba(243, 243, 243, 0.856);
+    position: fixed;
+    bottom:20px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: rgb(241, 119, 119);
+     text-decoration: none;
+     opacity:0;
+     pointer-events: none;
+     transition: all .4s;
+     box-shadow: 10px 10px 10px  rgba(236, 108, 108, 0.438);
+}
+.to-top.active{
+    bottom: 40px;
+    opacity: 1;
+    pointer-events: auto;
+    text-decoration: none;
+    color: rgb(241, 119, 119);
+}
+

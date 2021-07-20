@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,400&family=Crimson+Text:ital,wght@1,600&family=Vollkorn&display=swap');
+*{
+    overflow-x: hidden;
+    margin: 0;    
+    font-family: 'Nova Flat', cursive;   
+    scroll-behavior: smooth;
+}
+body{
+    background-color:white;
+}
+
+button{
+    overflow: hidden;
+    background-color: aqua;
+}
+
