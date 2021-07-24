@@ -133,12 +133,15 @@ include("initFile/init.php");
           <p class="text-md-start" data-aos="fade-left" data-aos-duration="1000">Les grandes industries, les exploitations agricoles, les compagnies d’assurance, les promoteurs BTP, les autres domaines et bien plus encore nous font confiance pour fournir les aperçus globaux et les données tangibles nécessaires à leurs activités en utilisant nos drones DJI. De la photographie aérienne de haute précision à la cartographie topographique et altimétrique, en passant par l’inspection vidéo en direct de l’architecture verticale, nous maîtrisons la technologie et l’expertise pour répondre à vos besoins, quel que soit votre secteur d’activité.</p>
           <br><br><br>
           <h2 class="text-left" data-aos="fade-left" data-aos-duration="1050">technologies:</h2>
+          <br>
           <p class="text-md-start" data-aos="fade-left" data-aos-duration="1050">Utilisant des systèmes aériens sans pilote de pointe, nous vous fournit des données de précision de la plus haute précisions. Nous nous spécialisons dans une gamme complète d’applications d’inspection par drones, à travers les industries qui profitent le plus de l’observation aérienne, la photographie et la cartographie. Nos capacités comprennent également l’imagerie 3D, la cartographie de la chaleur thermique (thermographie), la topographie LIDAR, l’analyse hyper-spectrale et la vidéo 4K haute résolution. Grâce à cette diversité de services, nous sommes en mesure de répondre aux besoins de collecte de données de tous les projets auxquels nous sommes chargés, à un niveau sans précédent.</p>
-          <br><br><br>
+          <br><br>
           <h2 class="text-left" data-aos="fade-left" data-aos-duration="1100">sevices:</h2>
+          <br>
           <p class="text-md-start" data-aos="fade-left" data-aos-duration="1100">Nous offrons une multitude de service drone dans chaque domaine d’activité. Tous nos pilotes ont leur certification avancée de pilotage et ont d’innombrables heures d’utilisation de drones (RPAS). La sécurité est notre priorité absolue dans toutes nos missions. Nous avons des équipements certifiés et pouvons voler dans l’espace aérien de jour comme de nuit. Nous pouvons fournir à nos clients des délais d’exécution rapides sur la planification des missions et être prêts à voler dans les plus court délai.</p>
-          <br><br><br>
+          <br><br>
           <h2 class="text-left" data-aos="fade-left" data-aos-duration="1150">formation:</h2>
+          <br>
           <p class="text-md-start" data-aos="fade-left" data-aos-duration="1150">Creatix Studio propose aussi à ses clients des formations professionnelles, pointues et intégrales allant de la formation sur le pilotage de drone, passant par la formation sur la gestion des situations d’urgence et risques, à la formation sur les métiers liés au drone (Mapping 3D, Photogrammétrie, Inspection industrielle réseau électrique, panneaux solaire, éolienne et installations industrielles, Sécurité publique, Tournage cinéma par drone,..etc).</p>
 
       </div>
@@ -297,7 +300,7 @@ include("initFile/init.php");
 </div>
 <br> <br><br>
 <div class="notreexpertise  shadow-lg p-3 mb-5 bg-body rounded">
-<div class="contenu"> 
+<div class="contenu "> 
         <div class="container">
           <div class="row">
             <div class="col">
@@ -342,9 +345,6 @@ Nous offrons une multitude de produit drone et de service drone dans chaque doma
 
 </div>
 
-<a href="#" class="to-top">
-<i class="fas fa-angle-double-up"></i>
-</a>
 
 </div>
 

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light  ">
   <div class="container-fluid ">
     <a class="navbar-brand" href="#">Creatix Center School</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto" >
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Accueil</a>
+          <a class="nav-link" aria-current="page" href="index.php">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Nos Service</a>
+          <a class="nav-link" href="service.php">Nos Service</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Nos Formation</a>
@@ -32,10 +32,26 @@
       <li class="nav-item">
           <a  class="nav-link " href="tel:0656253574" id="contacter" > <i class="fas fa-phone-volume"></i> Téléphoner</a>
           
-      </li>
+      </li> 
+  
       </ul> 
-      
+      <ul class="navbar-nav mx-auto" >
+      <li class="nav-item">
+          <a  class=" btn btn-primary" href="#"  > Se connecter</a>
+          
+      </li>
+      </ul>
     </div>
   </div>
 </nav>
+<!-- back to top-->
+<a href="#" class="to-top">
+<i class="fas fa-angle-double-up"></i>
+</a>
+ 
 
+<!-- folow cureseur desgin-->
+
+
+<div class="curseur"></div>
+<div class="curseur2"></div>

@@ -35,7 +35,7 @@
             AOS.init({once:"scroll"});
     </script>
 
-<script src="<?php echo $js;?>myjs.js"></script> 
+<script src="<?php echo $js;?>myj.js"></script> 
 
 
 </body>

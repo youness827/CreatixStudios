@@ -23,16 +23,15 @@
 
     <!-- Mine css-->
 
-
- 
-
-    <link rel="stylesheet" href="<?php echo $css;?>nav.css">
+    <link rel="stylesheet" href="<?php echo $css;?>na.css">
 
 
-    <link rel="stylesheet" href="<?php echo $css;?>indexx.css">
-    <link rel="stylesheet" href="<?php echo $css;?>body.css">
+    <link rel="stylesheet" href="<?php echo $css;?>indexx.css"> 
+    <link rel="stylesheet" href="<?php echo $css;?>servic.css">
+    <link rel="stylesheet" href="<?php echo $css;?>bodyy.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&family=Nova+Flat&display=swap" rel="stylesheet">
 
