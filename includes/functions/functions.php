@@ -14,5 +14,14 @@ function getTitlePage(){
 
 
 
+/*Service function */
+function service($con,$var){
+    $stmt = $con->prepare("select *from service where ID_SERVICE = ?");
+    $stmt->execute(array($var));
+    $rows = $stmt->fetch();
+    return $rows;
+}
+
+
 
 ?>

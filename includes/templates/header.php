@@ -23,7 +23,7 @@
 
     <!-- Mine css-->
 
-    <link rel="stylesheet" href="<?php echo $css;?>na.css">
+    <link rel="stylesheet" href="<?php echo $css;?>nav.css">
 
 
     <link rel="stylesheet" href="<?php echo $css;?>indexx.css"> 

@@ -3,6 +3,13 @@
 $titlePage = "Nos services";
 include("initFile/init.php");
 
+   // select services db 
+
+  
+
+
+
+
 ?>
 
 <div class="bodyIndex">
@@ -43,11 +50,20 @@ include("initFile/init.php");
                 <div class="col">
                     <div class="card shadow-lg p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="1400">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Service traitement agricole</h5>
-                            <p class="card-text">Nous fournissons des services allant de l’analyse multispectrale à l’épandage des traitements phytosanitaire.
-
-                                En utilisant notre technologie de drone de pointe, nous accompagnons nos clients dans leur développement technologique en leur offrant des solutions dédiées et l’expertise d’une équipe attentive.</p>
-
+                            <h5 class="card-title text-center">  
+                                <?php  
+                                        $row = service($con , 1); 
+                                         echo $row["TYPE"];
+                                
+                                ?></h5>
+                            <p class="card-text">
+                                
+                            
+                            <?php  
+                                        $row = service($con , 1); 
+                                         echo $row["DESCRIPTION"];
+                                
+                                ?>
                         </div>
                     </div>
                 </div>
@@ -55,8 +71,16 @@ include("initFile/init.php");
                 <div class="col">
                     <div class="card shadow-lg p-3 mb-5 bg-body rounded " data-aos="fade-down-right" data-aos-duration="2400">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Service de l’audio-visuel <br>(tournage par drone, film,..etc)</h5>
-                            <p class="card-text"> Nos pilotes de drone, cameramans, cadreurs et autres professionnels de l’audiovisuels, réalisent vos films ou vidéos, avec des images aériennes et terrestres en gérant <br> l’ensemble des étapes de la production audiovisuelle <br> du début à la fin.</p>
+                            <h5 class="card-title text-center">     <?php  
+                                        $row = service($con , 2); 
+                                         echo $row["TYPE"];
+                                
+                                ?></h5>
+                            <p class="card-text"><?php  
+                                        $row = service($con , 2); 
+                                         echo $row["DESCRIPTION"];
+                                
+                                ?></p>
 
                         </div>
                     </div>
@@ -76,9 +100,17 @@ include("initFile/init.php");
                     <div class="card shadow-lg p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="2400">
                         <div class="card-body">
 
-                            <h5 class="card-title text-center"> Service photogrammétrie par drone</h5>
+                            <h5 class="card-title text-center">  <?php  
+                                        $row = service($con , 3); 
+                                         echo $row["TYPE"];
+                                
+                                ?></h5>
 
-                            <p class="card-text">La photogrammétrie par drone consiste à prendre des photographies aériennes afin d’aboutir à une représentation d’un site ou d’un objet, qui peut être sous forme d’orthophotoplan, de maquette 3D ou encore de plan topographique.</p>
+                            <p class="card-text">  <?php  
+                                        $row = service($con , 3); 
+                                         echo $row["DESCRIPTION"];
+                                
+                                ?></p>
 
                         </div>
                     </div>
@@ -92,9 +124,17 @@ include("initFile/init.php");
                     <div class="card shadow-lg p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2400">
                         <div class="card-body">
 
-                            <h5 class="card-title text-center">Service modélisation,<br> 2D/3D par drone</h5>
+                            <h5 class="card-title text-center"><?php  
+                                        $row = service($con , 4); 
+                                         echo $row["TYPE"];
+                                
+                                ?></h5>
 
-                            <p class="card-text">Nos logiciels permettent de convertir des milliers d’images aériennes prises par nos drones en orthomosaïques 2D géoréférencées, modèles de surface 3D ou encore nuages de points.</p>
+                            <p class="card-text"><?php  
+                                        $row = service($con , 4); 
+                                         echo $row["DESCRIPTION"];
+                                
+                                ?></p>
 
                         </div>
                     </div>
@@ -108,9 +148,17 @@ include("initFile/init.php");
 
                     <div class="card shadow-lg p-3 mb-5 bg-body rounded" data-aos="fade-down-right" data-aos-duration="2400">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Service de l’inspection industrielle</h5>
-                            <p class="card-text">Rapide et économique, le drone offre de nombreux services aux industriels,Inspection <br>industrielle par drone en simplifiant considérablement l’inspection des infrastructures, des bâtiments ou des installations industrielles.
-
+                            <h5 class="card-title text-center"><?php  
+                                        $row = service($con , 5); 
+                                         echo $row["TYPE"];
+                                
+                                ?></h5>
+                            <p class="card-text"> 
+                            <?php  
+                                        $row = service($con , 5); 
+                                         echo $row["DESCRIPTION"];
+                                
+                                ?>
                             </p>
 
                         </div>
@@ -131,7 +179,10 @@ include("initFile/init.php");
                 <div class="contenu">
                     <br><br><br>
                     <h2>CE QUE NOUS OFFRONS</h2>
+
                     <br>
+                    <p class="text-center">DroneWay vous ouvre de nouvelles perspectives avec ses solutions de drones. Ce n’est que lorsque vous survolez vos projets que vous réalisez à quel point une vue aérienne est incroyablement utile et à grande valeur ajoutée!</p>
+                    <br> <br>
                     <div class="accordion" id="accordionExample">
                         <!-- according begin-->
 
@@ -139,7 +190,7 @@ include("initFile/init.php");
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <h3> Traitement Agricole</h3>
+                                <h3> traitement agricole</h3>
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -169,8 +220,8 @@ include("initFile/init.php");
 
                                 </div>
                             </div>
-                        </div><!-- item 1 --> 
-                        
+                        </div><!-- item 1 -->
+
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTow">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTow" aria-expanded="false" aria-controls="collapseTow">
@@ -180,13 +231,13 @@ include("initFile/init.php");
                             <div id="collapseTow" class="accordion-collapse collapse" aria-labelledby="headingTow" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p> <strong>Creatix School Center </strong> vous aide à vous démarquer de la concurrence avec nos photographies de qualité supérieure. Nous vous livrons des images et vidéos grand angle et de haute résolution pour mettre en valeur votre propriété et votre projet. Les images et les vidéos sont tournées avec des appareils photos et vidéos professionnels et des objectifs grand angle pour garantir le meilleur rendu et ainsi des photos/vidéos avec des perspectives aériennes uniques.</p>
-                                <h5>Type de projet : </h5>
+                                    <h5>Type de projet : </h5>
                                     <ul>
-                                      <li>Immobilier commercial,</li>
+                                        <li>Immobilier commercial,</li>
                                         <li>Clubs / Hôtel / Terrains de golf,</li>
                                         <li>Écoles / Universités,</li>
-                                      <li>Projet résidentiels haut de gamme de luxe,</li>
-                                  </ul>
+                                        <li>Projet résidentiels haut de gamme de luxe,</li>
+                                    </ul>
 
                                     <div class="container">
                                         <div class="row row-cols-1 row-cols-lg-3 g-5">
@@ -194,10 +245,10 @@ include("initFile/init.php");
                                                 <img class="img" src="<?php echo $images ?>thumbs_golf.jpg">
                                             </div>
                                             <div class="col">
-                                                <img  class="img" src="<?php echo $images ?>thumbs_hotel.jpg">
+                                                <img class="img" src="<?php echo $images ?>thumbs_hotel.jpg">
                                             </div>
                                             <div class="col">
-                                                <img   class="img" src="<?php echo $images ?>thumbs_projet-luxe-2.jpg">
+                                                <img class="img" src="<?php echo $images ?>thumbs_projet-luxe-2.jpg">
                                             </div>
 
                                         </div>
@@ -215,14 +266,14 @@ include("initFile/init.php");
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p> <strong>Creatix School Center </strong>  documente chaque phase de votre projet de construction depuis l’étude initiale du site jusqu’au projet finalisé/livré. Nos drones fournissent des images aériennes qui améliorent les rapports d’avancement mensuels et fournissent à toute personne associée au projet des informations précieuses tout en leur faisant gagner du temps et de l’argent (capture de riches données aériennes et génération des modèles 3D détaillés).</p>
-                                <h5>Les Types de projets qui peuvent être exécutés à l’aide de drones couvrent toute la gamme : </h5>
+                                    <p> <strong>Creatix School Center </strong> documente chaque phase de votre projet de construction depuis l’étude initiale du site jusqu’au projet finalisé/livré. Nos drones fournissent des images aériennes qui améliorent les rapports d’avancement mensuels et fournissent à toute personne associée au projet des informations précieuses tout en leur faisant gagner du temps et de l’argent (capture de riches données aériennes et génération des modèles 3D détaillés).</p>
+                                    <h5>Les Types de projets qui peuvent être exécutés à l’aide de drones couvrent toute la gamme : </h5>
                                     <ul>
-                                      <li>Suivi précis des chantiers de construction,</li>
+                                        <li>Suivi précis des chantiers de construction,</li>
                                         <li>Photogrammétrie des sols et modèle orthographique 2D,</li>
                                         <li>Cartographie et génération des modèles 3D détaillés(Mapping, Photogrammétrie : Modèle Orthophoto, MNT, MNS,…etc),</li>
-                                      <li>Création de cartes volumétriques des stocks de matériaux pour les sociétés minières,</li>
-                                      <li>Inspection des bâtiments et localisation des défauts de construction,</li>
+                                        <li>Création de cartes volumétriques des stocks de matériaux pour les sociétés minières,</li>
+                                        <li>Inspection des bâtiments et localisation des défauts de construction,</li>
 
                                     </ul>
 
@@ -232,10 +283,10 @@ include("initFile/init.php");
                                                 <img class="img" src="<?php echo $images ?>thumbs_chantier-2-1.jpg">
                                             </div>
                                             <div class="col">
-                                                <img  class="img" src="<?php echo $images ?>thumbs_chantier-4.jpg">
+                                                <img class="img" src="<?php echo $images ?>thumbs_chantier-4.jpg">
                                             </div>
                                             <div class="col">
-                                                <img   class="img" src="<?php echo $images ?>thumbs_chantier-1.jpg">
+                                                <img class="img" src="<?php echo $images ?>thumbs_chantier-1.jpg">
                                             </div>
 
                                         </div>
@@ -255,13 +306,13 @@ include("initFile/init.php");
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>La technique d’inspection par drone offre des inspections structurelles, qui sont plus rapides et plus sûres que les méthodes d’accès conventionnelles. Notre technique d’inspection réduit les coûts en supprimant l’exigence de grandes surfaces d’échafaudage et améliore la sécurité en réduisant le besoin de travailler en hauteur. Toutes les inspections sont effectuées par des pilotes experts.</p>
-                                <h5>Creatix School Center propose : </h5>
+                                    <h5>Creatix School Center propose : </h5>
                                     <ul>
-                                      <li>Des inspections visuelles et thermiques rapprochées et des enquêtes sur les structures hautes, vivantes et difficiles à atteindre des installations industrielles, pétrolières et gazières onshores et offshores,</li>
+                                        <li>Des inspections visuelles et thermiques rapprochées et des enquêtes sur les structures hautes, vivantes et difficiles à atteindre des installations industrielles, pétrolières et gazières onshores et offshores,</li>
                                         <li>Des inspections et des enquêtes dans le secteur des énergies renouvelables, en aidant nos clients à effectuer des inspections des éoliennes et de champ de panneaux photovoltaïques,</li>
                                         <li>Cartographie et génération des modèles 3D détaillés(Mapping, Photogrammétrie : Modèle Orthophoto, MNT, MNS,…etc),</li>
-                                      <li>Des inspections et des études pour le secteur de l’électricité et des télécommunications. Nous assistons nos clients dans l’inspection des tours de transmission et de distribution,</li>
-                                      <li>Des inspections et des enquêtes dans le secteur maritimes, en aidant nos clients à inspecter leurs structures et travaux sous-marins ainsi que les zones difficilement accessibles,</li>
+                                        <li>Des inspections et des études pour le secteur de l’électricité et des télécommunications. Nous assistons nos clients dans l’inspection des tours de transmission et de distribution,</li>
+                                        <li>Des inspections et des enquêtes dans le secteur maritimes, en aidant nos clients à inspecter leurs structures et travaux sous-marins ainsi que les zones difficilement accessibles,</li>
 
                                     </ul>
 
@@ -271,10 +322,10 @@ include("initFile/init.php");
                                                 <img class="img" src="<?php echo $images ?>thumbs_stack6-768x498.jpg">
                                             </div>
                                             <div class="col">
-                                                <img  class="img" src="<?php echo $images ?>thumbs_telecom.jpg">
+                                                <img class="img" src="<?php echo $images ?>thumbs_telecom.jpg">
                                             </div>
                                             <div class="col">
-                                                <img   class="img" src="<?php echo $images ?>thumbs_chemine.jpg">
+                                                <img class="img" src="<?php echo $images ?>thumbs_chemine.jpg">
                                             </div>
 
                                         </div>
@@ -286,20 +337,65 @@ include("initFile/init.php");
 
                     </div> <!-- according end-->
                 </div>
-
-
             </div>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="contenu">
+                        <br><br><br>
+
+
+                        <h2>Demander un service </h2>
+                        <br><br>
+                        <form action="" method="post">
+                           
+                            <select class="form-select" aria-label="Default select example" name="selectservice">
+                                <option selected value="NosService">Nos Service</option>
+                               <?php
+                              
+                              $stmt = $con->prepare("SELECT *from service ");
+                              $stmt->execute(array());
+                              $rows = $stmt->fetchAll();
+                              $count = $stmt->rowCount();
+                              if($count>0){
+                                    foreach($rows as $rr){
+                                        ?>
+                                        <option value="<?php echo $rr["ID_SERVICE"] ?>"><?php echo $rr["TYPE"] ?></option>
+                                        <?php
+
+                                    }
+                              }
+                             
+                               ?>
+                               
+                               
+                            </select>
+
+                         <br> 
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <input type="submit" class="btn btn-outline-success btn-lg me-md-2" value="Demandez">
+
+</div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
     </div>
 
 
 
-</div>
 
+    <?php
+    include("includes/templates/footer.php");
 
-
-
-<?php
-include("includes/templates/footer.php");
-
-?>
+    ?>
