@@ -31,11 +31,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/28087c3627.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+  <script>
             AOS.init({once:"scroll"});
     </script>
 
 <script src="<?php echo $js;?>myj.js"></script> 
+<script src="<?php echo $js;?>myloder.js"></script> 
 
 
 </body>

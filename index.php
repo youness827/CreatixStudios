@@ -5,9 +5,8 @@ include("initFile/init.php");
 
 ?>
 
-
 <!-- Carsouual -->
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" >
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="<?php echo $images; ?>AgrasT20.jpg" class="d-block w-100" alt="">
@@ -191,11 +190,6 @@ include("initFile/init.php");
   
 <br><br><br><br>
 
-<div class="creatixvideo shadow-lg p-3 mb-5 bg-body rounded">
-    <video style="width: 100%;" autoplay muted>
-  <source src="<?php echo $video?>creatix.mp4" type="video/mp4">
-  </video> 
-</div>
 
 
 
@@ -297,6 +291,12 @@ include("initFile/init.php");
 </div>
 
 </div>
+</div> 
+
+<div class="creatixvideo shadow-lg p-3 mb-5 bg-body rounded">
+    <video style="width: 100%;" autoplay muted>
+  <source src="<?php echo $video?>creatix.mp4" type="video/mp4">
+  </video> 
 </div>
 <br> <br><br>
 <div class="notreexpertise  shadow-lg p-3 mb-5 bg-body rounded">
@@ -322,8 +322,10 @@ Nous offrons une multitude de produit drone et de service drone dans chaque doma
     <div class="container">
       <div class="row">
         <div class="col">
-        <a href="#" class="btn btn-danger btn-lg">contactez nous</a>
-
+       
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <a href="#" class="btn btn-danger  btn-lg me-md-2">contactez nous</a>
+</div>
         </div>
       </div>
     </div>

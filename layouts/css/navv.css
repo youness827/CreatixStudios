@@ -118,3 +118,59 @@ background-color: rgb(61, 3, 3);
    transition: all .15s;
 
 }
+
+/*pree loder */
+
+.loader_bg{
+   position: fixed;
+   z-index: 999999;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+   
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    position: absolute;
+    top:calc(50vh - 75px);
+    left: calc(50vw - 75px);
+    overflow: hidden;
+}
+
+.loader::before, .loader::after{
+    content:'';
+    border: 1em solid rgb(255, 90, 90);
+    border-radius: 50%;
+    width:inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left :0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+    overflow: hidden;
+}
+
+
+.loader:before{
+   animation-delay: .8s;
+   overflow: hidden;
+}
+
+@keyframes loader{
+   0%{
+       transform: scale(0);
+       opacity: 0;
+   }
+   50%{
+       opacity: 1;
+   }
+   100%{
+       transform: scale(1);
+       opacity: 0;
+   }
+}

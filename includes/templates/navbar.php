@@ -1,3 +1,9 @@
+
+<div class="loader_bg">
+    <div class="loader"></div>
+</div>
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
   <div class="container-fluid ">
     <a class="navbar-brand" href="#">Creatix Center School</a>
@@ -37,7 +43,7 @@
       </ul> 
       <ul class="navbar-nav mx-auto" >
       <li class="nav-item">
-          <a  class=" btn btn-primary" href="#"  > Se connecter</a>
+          <a  class=" btn btn-primary" href="login.php"  > Se connecter</a>
           
       </li>
       </ul>

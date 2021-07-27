@@ -181,15 +181,15 @@ include("initFile/init.php");
                     <h2>CE QUE NOUS OFFRONS</h2>
 
                     <br>
-                    <p class="text-center">DroneWay vous ouvre de nouvelles perspectives avec ses solutions de drones. Ce n’est que lorsque vous survolez vos projets que vous réalisez à quel point une vue aérienne est incroyablement utile et à grande valeur ajoutée!</p>
+                    <p class="text-center">Creatix School Center vous ouvre de nouvelles perspectives avec ses solutions de drones. Ce n’est que lorsque vous survolez vos projets que vous réalisez à quel point une vue aérienne est incroyablement utile et à grande valeur ajoutée!</p>
                     <br> <br>
                     <div class="accordion" id="accordionExample">
                         <!-- according begin-->
 
 
-                        <div class="accordion-item">
+                        <div class="accordion-item shadow  p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2000" >
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <button class="accordion-button collapsed"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 <h3> traitement agricole</h3>
                                 </button>
                             </h2>
@@ -222,7 +222,7 @@ include("initFile/init.php");
                             </div>
                         </div><!-- item 1 -->
 
-                        <div class="accordion-item">
+                        <div class="accordion-item shadow p-3 mb-5 bg-body rounded"  data-aos="fade-down" data-aos-duration="2300">
                             <h2 class="accordion-header" id="headingTow">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTow" aria-expanded="false" aria-controls="collapseTow">
                                     <h3>PHOTOGRAPHIE IMMOBILIÈRE</h3>
@@ -258,7 +258,7 @@ include("initFile/init.php");
                             </div>
                         </div><!-- item 2 -->
 
-                        <div class="accordion-item">
+                        <div class="accordion-item shadow p-3 mb-5 bg-body rounded"  data-aos="fade-down" data-aos-duration="2500">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <h3>SITE SURVEY ET SUIVI DES OUVRAGES D’ARTS/CHANTIERS</h3>
@@ -297,7 +297,7 @@ include("initFile/init.php");
                         </div><!-- item 3 -->
 
 
-                        <div class="accordion-item">
+                        <div class="accordion-item shadow p-3 mb-5 bg-body rounded"  data-aos="fade-down" data-aos-duration="2700">
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <h3>INSPECTION INDUSTRIELLE</h3>
@@ -375,7 +375,7 @@ include("initFile/init.php");
 
                          <br> 
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-  <input type="submit" class="btn btn-outline-success btn-lg me-md-2" value="Demandez">
+  <input type="submit" class="btn btn-outline-danger btn-lg me-md-2" value="Demandez">
 
 </div>
                         </form>

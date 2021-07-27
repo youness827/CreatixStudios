@@ -23,13 +23,13 @@
 
     <!-- Mine css-->
 
-    <link rel="stylesheet" href="<?php echo $css;?>nav.css">
+    <link rel="stylesheet" href="<?php echo $css;?>navv.css">
 
 
     <link rel="stylesheet" href="<?php echo $css;?>indexx.css"> 
     <link rel="stylesheet" href="<?php echo $css;?>servic.css">
-    <link rel="stylesheet" href="<?php echo $css;?>bodyy.css">
-
+    <link rel="stylesheet" href="<?php echo $css;?>body.css">
+    <link rel="stylesheet" href="<?php echo $css;?>login.css">
     <!-- font links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,3 +44,4 @@
 </head>
 <body>
     
+

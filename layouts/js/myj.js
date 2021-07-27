@@ -20,3 +20,5 @@ document.addEventListener("mousemove",function(e){
     curseur.style.cssText = curseur2.style.cssText = "left: "+e.clientX+"px; top: "+e.clientY+"px;";
 
 });
+
+
