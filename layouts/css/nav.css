@@ -120,7 +120,7 @@ background-color: rgb(61, 3, 3);
 }
 
 /*pree loder */
-
+/*
 .loader_bg{
    position: fixed;
    z-index: 999999;
@@ -173,4 +173,4 @@ background-color: rgb(61, 3, 3);
        transform: scale(1);
        opacity: 0;
    }
-}
+}*/

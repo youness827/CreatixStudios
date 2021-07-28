@@ -1,0 +1,28 @@
+.loginForm{
+
+    border: 2px solid #00000028;
+    border-radius:4%;
+    height: max-content;
+    width:100%;
+   
+}
+/*password */
+.inputwithicon{
+    position: relative;
+}
+.inputwithicon i {
+    position: absolute;
+    right:0;
+    top: 0;
+    padding:10px;
+    color: rgb(0, 17, 255);
+    cursor: pointer;
+}
+.form-control{
+    border: 1px solid #0080ff;
+
+}
+.form-control:hover{
+    border: 1px solid #0080ff75;
+    transition: border-color .15s ;
+}
