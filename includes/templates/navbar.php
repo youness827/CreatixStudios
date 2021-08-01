@@ -40,16 +40,69 @@
           
       </li> 
   
-      </ul> 
+      </ul>  
+
+   <!-- if is set admin session-->
+   <?php
+        // if is set admin session
+        if(isset($_SESSION["admin"])){
+        
+  ?>
       <ul class="navbar-nav mx-auto" >
       <li class="nav-item">
-          <a  class=" btn btn-primary" href="login.php"  > Se connecter</a>
+          <a  class=" btn btn-outline-primary" href="dashbordAdmin/indexAd.php"><i class="fas fa-user-cog"></i>&nbsp;Dashboard Admin</a>
           
       </li>
+      
+      </ul> 
+   <?php   }else  if(isset($_SESSION["USER"])){?>
+    <ul class="navbar-nav mx-auto" >
+      <li class="nav-item">
+          <a  class=" btn btn-outline-primary" href="#"><i class="fas fa-user-cog"></i>&nbsp;<?php echo $_SESSION["USER"];?></a>
+          
+      </li>
+      
+      </ul> 
+  <?php } ?>
+
+
+<?php  // if session exist  se deconnecter enabled
+      if(isset($_SESSION["admin"]) || isset($_SESSION["USER"])){
+        ?>
+    
+
+      <ul class="navbar-nav mx-auto" >
+      <li class="nav-item">
+          <a  class=" btn btn-outline-danger" href="logout.php"  ><i class="fas fa-sign-out-alt"></i>&nbsp; Se deconnecter</a>
+          
+      </li>
+
       </ul>
+      <?php }else if(!(isset($_SESSION["admin"]) || isset($_SESSION["USER"])))
+      {
+        ?>
+        <ul class="navbar-nav mx-auto" >
+        <li class="nav-item">
+            <a  class=" btn btn-outline-primary" href="login.php"  ><i class="fas fa-user-plus"></i> Se connecter</a>
+            
+        </li>
+  
+        </ul>
+      
+  <?php    }?>
+
+   
+
     </div>
   </div>
-</nav>
+</nav> 
+
+
+
+
+
+
+
 <!-- back to top-->
 <a href="#" class="to-top">
 <i class="fas fa-angle-double-up"></i>

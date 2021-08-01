@@ -1,7 +1,9 @@
 <?php
+session_start();
 
 $titlePage = "Creatix Studio";
 include("initFile/init.php");
+
 
 ?>
 
@@ -72,7 +74,7 @@ include("initFile/init.php");
   <div class="container">
     <div class="row row-cols-1 row-cols-md-3 g-5">
       <div class="col">
-        <div class="card shadow-sm p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="1200">
+        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="1200">
           <img src="<?php echo $images; ?>livraison-par-drone.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Dans la logistique</h5>
@@ -80,7 +82,7 @@ include("initFile/init.php");
         </div>
       </div>
       <div class="col">
-        <div class="card shadow-sm p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="1400">
+        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="1400">
           <img src="<?php echo $images; ?>vue-aerienne-agriculture.jpg" class="card-img-top" alt="...">
           <div class="card-body ">
             <h5 class="card-title">Dans L'Agriculture</h5>
@@ -88,7 +90,7 @@ include("initFile/init.php");
         </div>
       </div>
       <div class="col">
-        <div class="card shadow-sm p-3 mb-5 bg-body rounded" data-aos="fade-down-right" data-aos-duration="1600">
+        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="fade-down-right" data-aos-duration="1600">
           <img src="<?php echo $images; ?>drone-controle.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Dans la sécurité</h5>
@@ -97,7 +99,7 @@ include("initFile/init.php");
       </div>
 
       <div class="col">
-        <div class="card shadow-sm p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="1800">
+        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="1800">
           <img src="<?php echo $images; ?>vue-aerienne-satellite-drone.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Pour l’aménagement du territoire</h5>
@@ -105,7 +107,7 @@ include("initFile/init.php");
         </div>
       </div>
       <div class="col">
-        <div class="card shadow-sm p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2000">
+        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2000">
           <img src="<?php echo $images; ?>drone-camera.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Le drone d’inspection</h5>
@@ -113,7 +115,7 @@ include("initFile/init.php");
         </div>
       </div>
       <div class="col">
-        <div class="card shadow-sm p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="2200">
+        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="2200">
           <img src="<?php echo $images; ?>drone-vue-aerienne-port.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"> les métiers de l’audiovisuel</h5>
@@ -203,9 +205,8 @@ include("initFile/init.php");
     <div class="row">
       <div class="col">
         <br><br>
-      <h2>Top services</h2>
+      <h2 class="shadow-lg p-3 mb-5 bg-body rounded">Top services</h2>
       <br> <br>
-        <h5 class="text-left">NOUS OFFRONS DES PRESTATIONS DE SERVICE DRONE DE HAUT NIVEAU TANT EN QUALITÉ QU’EN PROFESSIONNALISME  AVEC UNE EXPÉRIENCE DE PLUS DE 15 ANS</h5>
 
         <p class="text-left">Nous offrons une multitude de service drone dans chaque domaine d’activité. Tous nos pilotes ont leur certification avancée de pilotage et ont d’innombrables heures d’utilisation de drones (RPAS). La sécurité est notre priorité absolue dans toutes nos missions. Nous avons des équipements certifiés et pouvons voler dans l’espace aérien de jour comme de nuit. Nous pouvons fournir à nos clients des délais d’exécution rapides sur la planification des missions et être prêts à voler dans les plus court délai.
 </p>
@@ -218,7 +219,7 @@ include("initFile/init.php");
 <div class="container">
   <div class="row row-cols-1 row-cols-lg-4 g-5">
   <div class="col">
-  <div class="card shadow-sm p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="2000" >
+  <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2000" >
   <img src="<?php echo $images?>agras-eight.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text ">
@@ -236,15 +237,15 @@ include("initFile/init.php");
   </div>  
 
   <div class="col">
-  <div class="card shadow-sm p-3 mb-5 bg-body rounded"  data-aos="fade-down-left" data-aos-duration="2100" >
+  <div class="card shadow p-3 mb-5 bg-body rounded"  data-aos="fade-down" data-aos-duration="2100" >
   <img src="<?php echo $images?>hotel-270x361.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">   
          <ul class="a">
-        <li>Immobilier commercial</li>
-        <li>Projet résidentiels haut de gamme de luxe</li>
-        <li>Clubs / Hôtel / terrains de golf</li>
-        <li>Écoles / Universités
+        <li>Immobilier commercial.</li>
+        <li>Projet résidentiels haut de gamme de luxe.</li>
+        <li>Clubs / Hôtel / terrains de golf.</li>
+        <li>Écoles / Universités.
       </li>
       </ul>
     </p>
@@ -253,15 +254,15 @@ include("initFile/init.php");
   </div>   
   
   <div class="col">
-  <div class="card shadow-sm p-3 mb-5 bg-body rounded"  data-aos="fade-down-left" data-aos-duration="2200" >
+  <div class="card shadow p-3 mb-5 bg-body rounded"  data-aos="fade-down" data-aos-duration="2200" >
   <img src="<?php echo $images?>thermique-1-270x361.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">
       <ul class="a">
-        <li>Installations industrielles, pétrolières et gazières</li>
-        <li>Parc d’éoliennes et panneaux photovoltaïques</li>
-        <li>Installation tours électriques et Télécoms</li>
-        <li>Structure et travaux sous-marins
+        <li>Installations industrielles, pétrolières et gazières.</li>
+        <li>Parc d’éoliennes et panneaux photovoltaïques.</li>
+        <li>Installation tours électriques et Télécoms.</li>
+        <li>Structure et travaux sous-marins.
 </li>
       </ul>
     </p>
@@ -270,15 +271,15 @@ include("initFile/init.php");
   </div>  
 
   <div class="col">
-  <div class="card shadow-sm p-3 mb-5 bg-body rounded" data-aos="fade-down-left" data-aos-duration="2300" >
+  <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2300" >
   <img src="<?php echo $images?>chantier-2-1-270x361.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <p class="card-text">      
        <ul class="a">
-        <li>Suivi précis des chantiers de construction</li>
-        <li>Photogrammétrie des sols et modèle orthographique 2D</li>
-        <li>Cartographie et génération des modèles 3D détaillés (Mapping)</li>
-        <li>Création de cartes volumétriques des stocks de matériaux pour les sociétés minières
+        <li>Suivi précis des chantiers de construction.</li>
+        <li>Photogrammétrie des sols et modèle orthographique 2D.</li>
+        <li>Cartographie et génération des modèles 3D détaillés (Mapping).</li>
+        <li>Création de cartes volumétriques des stocks de matériaux pour les sociétés minières.
       </li>
       </ul>
     </p>
@@ -307,7 +308,7 @@ include("initFile/init.php");
               <br> <br>
               <h1>NOTRE EXPERTISE</h1>
               <br>
-         <p class="text-md-start">
+         <p class="text-md-start shadow p-3 mb-5 bg-blue rounded">
          Depuis plus de 15 ans, nos clients nous font confiance pour étudier et réaliser ensemble leur projet drone. Nous offrons des drones et des prestations de service drone de haut niveau tant en qualité qu’en professionnalisme avec une expérience confirmée. <br> <br>
 
 Nous offrons une multitude de produit drone et de service drone dans chaque domaine d’activité. Nos drones sont certifiés et tous nos pilotes ont leur certification avancée de pilotage et ont d’innombrables heures d’utilisation de drones (UAV/RPAS). La sécurité est notre priorité absolue dans toutes nos projets et missions. Nous avons des équipements certifiés et pouvons voler dans l’espace aérien de jour comme de nuit. Nous pouvons fournir à nos clients des délais d’exécution rapides sur la planification des missions et être prêts à voler dans les plus court délai. Nos clients nous confient leur projet drone, nous les étudions et les réalisons en garantissant les meilleurs résultats et la meilleure qualité au normes internationales du domaine de l’aviation civile et du domaine des drones.
@@ -324,7 +325,7 @@ Nous offrons une multitude de produit drone et de service drone dans chaque doma
         <div class="col">
        
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-  <a href="#" class="btn btn-danger  btn-lg me-md-2">contactez nous</a>
+  <a href="#" class="btn btn-outline-light  btn-lg me-md-2 shadow p-3 mb-5 bg-blue rounded">contactez nous</a>
 </div>
         </div>
       </div>
@@ -353,5 +354,6 @@ Nous offrons une multitude de produit drone et de service drone dans chaque doma
 
 
 <?php
+
 include("includes/templates/footer.php");
 ?>

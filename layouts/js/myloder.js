@@ -1,6 +1,6 @@
 
-/*loder.js*//*
-$('body').css({
+/*loder.js*/
+/*$('body').css({
     'overflow': 'hidden'
     });
 setTimeout(function(){
@@ -8,4 +8,4 @@ setTimeout(function(){
     $('.loader_bg').fadeToggle();
    
 
-},4500);*/
+},2500);*/

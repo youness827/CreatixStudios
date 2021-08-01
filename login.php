@@ -1,8 +1,16 @@
 <?php
-
+session_start();
 $titlePage = "Se Connecter";
 include("initFile/init.php");
 
+$msg="";
+
+
+if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){ 
+    header("location:index.php");
+    exit();
+}else{
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     /*login */
 
@@ -21,18 +29,72 @@ include("initFile/init.php");
                                            ");
                     $stmt->execute(array($email,$password));
                     $rows= $stmt->fetch();
-                    print_r($rows);
                     $count=$stmt->rowCount();
                     if($count>0){
-                        header("location:dashbordAdmin/indexAd.php");
-                        exit();
+
+                            if($rows['STATUT']==0){
+                                            //Admin
+                                    $stmt=$con->prepare("SELECT *FROM client 
+                                                        where ID_CLIENT = ?");
+                                    $stmt->execute(array($rows['ID_CLIENT']));
+                                    $rowcl = $stmt->fetch();
+                                    $count =$stmt->rowCount();
+                                    if($count>0){
+
+
+                                    //Creation session admin  
+                                    $_SESSION["admin"]=$rowcl["NOM"].' '.$rowcl["PRENOM"];
+                                        
+
+                                    //go to dashbord admin
+                                    header("location:index.php");
+                                        exit();
+
+                                    }
+
+
+                            }else if($rows['STATUT']==1){
+                                //USER
+                    
+                                $stmt=$con->prepare("SELECT *FROM client 
+                                where ID_CLIENT = ?");
+                                    $stmt->execute(array($rows['ID_CLIENT']));
+                                    $rowcl = $stmt->fetch();
+                                    $count =$stmt->rowCount();
+                                    if($count>0){
+
+
+                                    //Creation session USER  
+                                    $_SESSION["USER"]=$rowcl["NOM"].' '.$rowcl["PRENOM"];
+                                     $_SESSION["iduser"]=$rowcl["ID_CLIENT"];
+
+                                    //go to USER
+                                    header("location:index.php");
+                                        exit();
+
+                                    }
+                
+                                    
+                                
+                          
+                          
+                                }
+
+
+
+
                     }else{
-                        header("location:login.php");
-                        exit();
+                        $msg = "email ou mot de passe incorrect !!";
                     }
 
 
             }
+
+
+
+
+        }
+
 
 
 
@@ -67,7 +129,12 @@ include("initFile/init.php");
                                 <form action="#" method="post"  autocomplete="off">
                                     <br><br> <br><br><br><br> 
                                     <h2 class="text-center ">S'identifier</h2>
-                                    <br><br> 
+                                    <br> <br>
+                                    <?php if(isset($msg) && !empty($msg)){
+                                        ?>
+                                        <h6 class="text-danger text-center"><?= $msg?></h6> 
+                                        <?php }?>
+                                
                                     <div class="mb-3">
                                         <div class="inputwithicon"> 
                                         <input type="email" class="form-control" required id="exampleFormControlInput1" name="email" placeholder="name@example.com">
@@ -83,7 +150,7 @@ include("initFile/init.php");
                                     </div>
                                     
                                     <div class="d-grid gap-2 col-6 mx-auto">
-                                        <input  class="btn btn-outline-primary" type="submit" name="submit" value="S'identifier"/>
+                                        <input  class="btn btn-outline-primary " type="submit" name="submit" value="S'identifier"/>
 
                                     </div>
                                      
@@ -122,7 +189,7 @@ include("initFile/init.php");
 
 
 <?php
-
+}
 include("includes/templates/footer.php");
 
 ?>

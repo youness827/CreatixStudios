@@ -2,7 +2,7 @@
 
 $titlePage = "Se Connecter";
 include("initFile/init.php");
-
+if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     /*login */
 
@@ -75,7 +75,7 @@ include("initFile/init.php");
 
 
 
-
+}
 
 ?>
 <br> <br><br><br> 
@@ -139,14 +139,14 @@ include("initFile/init.php");
                                     </div>
                                     
                                     <div class="d-grid gap-2 col-6 mx-auto">
-                                        <input  class="btn btn-outline-primary" type="submit" name="submit" value="S'identifier"/>
+                                        <input  class="btn btn-outline-primary btnbtn" type="submit" name="submit" value="S'identifier"/>
 
                                     </div> 
                                 </form>
                                 <br>
                                 <p class="text-muted text-center">
 
-                                Si vous avez déjà un compte Identifiez-vous !!<a href="#">Se connecter</a> 
+                                Si vous avez déjà un compte Identifiez-vous !!<a href="login.php">Se connecter</a> 
 
                                 </p>
                                 </div>

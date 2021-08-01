@@ -128,6 +128,8 @@ background-color: rgb(61, 3, 3);
     width: 100%;
     height: 100%;
     overflow: hidden;
+    transition: background-color .8s;
+
 }
    
 .loader {
@@ -139,6 +141,8 @@ background-color: rgb(61, 3, 3);
     top:calc(50vh - 75px);
     left: calc(50vw - 75px);
     overflow: hidden;
+    transition: background-color .8s;
+
 }
 
 .loader::before, .loader::after{
@@ -153,12 +157,15 @@ background-color: rgb(61, 3, 3);
     animation: loader 2s linear infinite;
     opacity: 0;
     overflow: hidden;
-}
+    transition: background-color .8s;
+
+   }
 
 
 .loader:before{
    animation-delay: .8s;
    overflow: hidden;
+   transition: background-color .8s;
 }
 
 @keyframes loader{
