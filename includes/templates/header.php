@@ -24,9 +24,9 @@
     <!-- Mine css-->
 
     <link rel="stylesheet" href="<?php echo $css;?>nav.css">
-    <link rel="stylesheet" href="<?php echo $css;?>index.css"> 
+    <link rel="stylesheet" href="<?php echo $css;?>indexx.css"> 
     <link rel="stylesheet" href="<?php echo $css;?>servic.css">
-    <link rel="stylesheet" href="<?php echo $css;?>body.css">
+    <link rel="stylesheet" href="<?php echo $css;?>bod.css">
     <link rel="stylesheet" href="<?php echo $css;?>logi.css">
 
     <link rel="stylesheet" href="<?php echo $css;?>footer.css">

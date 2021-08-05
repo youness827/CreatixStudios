@@ -85,6 +85,7 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
 
                     }else{
                         $msg = "email ou mot de passe incorrect !!";
+                   
                     }
 
 
@@ -132,7 +133,12 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
                                     <br> <br>
                                     <?php if(isset($msg) && !empty($msg)){
                                         ?>
-                                        <h6 class="text-danger text-center"><?= $msg?></h6> 
+                                        <h6 class="text-danger text-center"><?= $msg?> 
+ <a href="reni.php"> mote de passe oublié?</a> </h6> 
+                                        <p class="text-muted text-center">
+
+
+</p>
                                         <?php }?>
                                 
                                     <div class="mb-3">

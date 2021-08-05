@@ -14,3 +14,6 @@ button{
     overflow: hidden;
     background-color: aqua;
 }
+.contenu{
+    overflow: hidden;
+}

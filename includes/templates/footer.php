@@ -28,7 +28,8 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-</section>
+</section> 
+<script src="<?php echo $js;?>scrooth.js"></script>
 <script src="<?php echo $js;?>jquery.min.js"></script>
 <script src="<?php echo $js;?>bootstrap.min.js"></script> 
 

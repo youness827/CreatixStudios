@@ -21,7 +21,14 @@
 
 
     //No NavBar
-    if(!isset($nonavbar)){
+    if(!isset($nonavbar)){ 
+
+    include "includes/languages/comman.php";
+
+
+
+
+
         include($templates."navbar.php");
     }
 

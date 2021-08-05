@@ -1,9 +1,29 @@
+
+<?php
+$languages="?lang=fr";
+
+?>
+
 <!-- pre loader_bg-->
 <div class="loader_bg">
     <div class="loader"></div>
 </div>
 
+<nav class="navbar navbar-light bg-light">
+ 
+    <p class="text-center">
 
+            <?= $lang["lang"]; ?> - 
+
+
+
+<a name="langs" href="?lang=fr"  > <?= $lang["fr"] ?> / </a>
+<a name="langs" href="?lang=an"  >  <?= $lang["an"] ?>  </a>
+   
+
+</p>
+  
+</nav>
 <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
   <div class="container-fluid ">
     <a class="navbar-brand" href="#">Creatix Center School</a>
@@ -13,16 +33,16 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto" >
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.php">Accueil</a>
+          <a class="nav-link" aria-current="page" href="index.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"> <?= $lang["acceuil"] ?></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="service.php">Nos Service</a>
+          <a class="nav-link" href="service.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"> <?= $lang["nosservice"] ?></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Nos Formation</a>
+          <a class="nav-link" href="#?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"> <?= $lang["nofromation"] ?></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Propos de nous</a>
+          <a class="nav-link" href="#?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"> <?= $lang["proposdenous"] ?></a>
         </li> 
        
       
@@ -32,11 +52,11 @@
       </ul> 
       <ul class="navbar-nav mx-auto" >
       <li class="nav-item">
-          <a class="nav-link" href="#" id="contacter" >Nous contacter</a>
+          <a class="nav-link" href="#?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>" id="contacter" > <?= $lang["nouscontacter"] ?></a>
           
       </li> 
       <li class="nav-item">
-          <a  class="nav-link " href="tel:0656253574" id="contacter" > <i class="fas fa-phone-volume"></i> Téléphoner</a>
+          <a  class="nav-link " href="tel:0656253574" id="contacter" > <i class="fas fa-phone-volume"></i>  <?= $lang["télephoner"] ?></a>
           
       </li> 
   
@@ -50,7 +70,7 @@
   ?>
       <ul class="navbar-nav mx-auto" >
       <li class="nav-item">
-          <a  class=" btn btn-outline-primary" href="dashbordAdmin/indexAd.php"><i class="fas fa-user-cog"></i>&nbsp;Dashboard Admin</a>
+          <a  class=" btn btn-outline-primary" href="dashbordAdmin/indexAd.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"><i class="fas fa-user-cog"></i>&nbsp;Dashboard Admin</a>
           
       </li>
       
@@ -58,7 +78,7 @@
    <?php   }else  if(isset($_SESSION["USER"])){?>
     <ul class="navbar-nav mx-auto" >
       <li class="nav-item">
-          <a  class=" btn btn-outline-primary" href="#"><i class="fas fa-user-cog"></i>&nbsp;<?php echo $_SESSION["USER"];?></a>
+          <a  class=" btn btn-outline-primary" href="#?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"><i class="fas fa-user-cog"></i>&nbsp;<?php echo $_SESSION["USER"];?></a>
           
       </li>
       
@@ -83,7 +103,7 @@
         ?>
         <ul class="navbar-nav mx-auto" >
         <li class="nav-item">
-            <a  class=" btn btn-outline-primary" href="login.php"  ><i class="fas fa-user-plus"></i> Se connecter</a>
+            <a  class=" btn btn-outline-primary" href="login.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"  ><i class="fas fa-user-plus"></i> <?= $lang["seconnecter"] ?></a>
             
         </li>
   
@@ -99,6 +119,11 @@
 
 
 
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Navbar</span>
+  </div>
+</nav>
 
 
 
