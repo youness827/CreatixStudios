@@ -31,8 +31,19 @@
 
         include($templates."navbar.php");
     }
+ 
 
+    if(isset($navbaradmin)){ 
+
+        include "includes/languages/comman.php";
     
+    
+    
+    
+    
+            include($templates."navbaradmin.php");
+        }
+     
 
 
 ?>

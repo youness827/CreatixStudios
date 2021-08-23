@@ -9,12 +9,13 @@ $msg="";
 if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){ 
     header("location:index.php");
     exit();
-}else{
+}else{ 
+    if(isset($_POST["submit"])){
+
     if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     /*login */
 
-    if(isset($_POST["submit"])){
             $email = htmlspecialchars(trim($_POST["email"])); 
             $pass = htmlspecialchars(trim($_POST["pass"]));
             $password = sha1($pass);
@@ -44,11 +45,19 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
 
                                     //Creation session admin  
                                     $_SESSION["admin"]=$rowcl["NOM"].' '.$rowcl["PRENOM"];
-                                        
+                                     $_SESSION["idadmins"]=$rowcl["ID_CLIENT"];
 
                                     //go to dashbord admin
-                                    header("location:index.php");
-                                        exit();
+                                    ?>
+
+                                                    
+                                    <script>
+                                    window.location.href="index.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>";
+                                     </script>
+                               
+                                    
+                                    <?php
+                                   
 
                                     }
 
@@ -69,9 +78,15 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
                                      $_SESSION["iduser"]=$rowcl["ID_CLIENT"];
 
                                     //go to USER
-                                    header("location:index.php");
-                                        exit();
+                                    ?>
 
+                                                    
+                                    <script>
+                                    window.location.href="index.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>";
+                                     </script>
+                               
+                               <?php
+                                   
                                     }
                 
                                     
@@ -83,8 +98,23 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
 
 
 
-                    }else{
-                        $msg = "email ou mot de passe incorrect !!";
+                    }else{ 
+                        if(isset($_GET["lang"])){
+                                                    
+                                                
+                            $lgs = $_GET["lang"];
+                            if($lgs=="an"){
+        
+                                
+                                $msg = "incorrect email or password !!";
+                            }else {
+        
+                                $msg = "email ou mot de passe incorrect !!";
+        
+                            }
+        
+                            }
+                      
                    
                     }
 
@@ -103,7 +133,7 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
 
 
 
-
+}
 
 
 
@@ -129,12 +159,12 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
                             
                                 <form action="#" method="post"  autocomplete="off">
                                     <br><br> <br><br><br><br> 
-                                    <h2 class="text-center ">S'identifier</h2>
+                                    <h2 class="text-center "><?= $lang["sdentifier"]?></h2>
                                     <br> <br>
                                     <?php if(isset($msg) && !empty($msg)){
                                         ?>
-                                        <h6 class="text-danger text-center"><?= $msg?> 
- <a href="reni.php"> mote de passe oublié?</a> </h6> 
+                                        <h6 class="text-danger text-center"><?= $msg;?> 
+ <a href="reni.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"> <?= $lang["motedepasseoublié"] ?></a> </h6> 
                                         <p class="text-muted text-center">
 
 
@@ -149,14 +179,14 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
                                     </div>
                                     <div class="mb-3">
                                         <div class="inputwithicon"> 
-                                        <input type="password" id="password" class="form-control" required id="inputPassword" name="pass" placeholder="mote de pass">
+                                        <input type="password" id="password" class="form-control" required id="inputPassword" name="pass" placeholder="<?= $lang["motedepass"]?>">
                                         
                                         <i id="eye" class="fas fa-eye"></i>
                                         </div>
                                     </div>
                                     
                                     <div class="d-grid gap-2 col-6 mx-auto">
-                                        <input  class="btn btn-outline-primary " type="submit" name="submit" value="S'identifier"/>
+                                        <input  class="btn btn-outline-primary " type="submit" name="submit" value="<?= $lang["sdentifier"]?>"/>
 
                                     </div>
                                      
@@ -164,9 +194,12 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
                                 <br>
                                 <p class="text-muted text-center">
 
-                                Vous n’avez pas de compte? <a href="sign_up.php">S'inscrire</a> 
+                                <?=$lang["Vousnavezpasdecompte"]?> <a href="sign_up.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"><?= $lang["Sinscrire"]?></a> 
 
-                                </p>
+                                </p> 
+                                <p class="text-muted text-center">
+ <a href="reni.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"> <?= $lang["motedepasseoublié"] ?></a>
+                                    </p>
                                 </div>
 
                             </div>
@@ -195,7 +228,7 @@ if(isset($_SESSION["admin"]) || isset($_SESSION["USER"]) ){
 
 
 <?php
-}
+
 include("includes/templates/footer.php");
 
 ?>

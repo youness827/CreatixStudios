@@ -39,55 +39,12 @@ $msg = "";
                         $stmt->execute(array($rowcmd["ID_COMMANDE"], $_POST["selectservice"]));
                         $countserv = $stmt->rowCount();
                         if ($countserv > 0) {
-                                                if(isset($_GET["lang"])){
-                                                    
-                                                
-                                                $lgs = $_GET["lang"];
-                                                if($lgs=="an"){
-
-                                                    
-                                                    $msg = "your request is taken into account";
-                                                    $title="success";
-                                                
-                                                }else {
-
-                                                    $msg = "votre demande est bien prise en compte";
-                                                    $title="succés";
-
-                                                }
-
-                                                }
-
-                           
-                      
-                      
+                            $msg = "votre demande est bien prise en compte";
                         }
                     }
                 }
             } else {
-                if(isset($_GET["lang"])){
-                                                    
-                                                
-                    $lgs = $_GET["lang"];
-                    if($lgs=="an"){
-
-                        
-                        $msg ="please select a service";
-
-                        $title="Warning";
-                    }else {
-
-                        $msg = "veuillez choisir un service";
-
-                        $title="Attention";
-
-                    }
-
-                    }
-
-
-          
-          
+                $msg = "veuillez choisir un service";
             }
 
 
@@ -108,25 +65,26 @@ $msg = "";
 <div class="bodyIndex">
 
     <div class="container">
-        <div class="row ">
+        <div class="row">
             <div class="col">
                 <div class="contenu ">
                     <br> <br> <br> <br> <br>
                     <h2 data-aos="fade-down" data-aos-duration="1800"><?= $lang["titleservice"]?></h2>
                     <br> 
                         <div class="text-center " data-aos="fade-up-right" data-aos-duration="2100">
+<img src="<?php echo $images?>servicess.png" class="img-fluid" alt="..."> 
 </div>
  <br> <br>
                     <p data-aos="fade-down" data-aos-duration="2800"><?= $lang["parservice"];?></p>
 
                     <br> <br> <br> <br>
-                    <p data-aos="fade-down" class="shadow p-3 mb-5 bg-light rounded " data-aos-duration="2400"> <span class="sp "> <?= $lang["agriculture"];?> :</span><?= $lang["paragriculture"];?></p>
+                    <p data-aos="fade-down" class="shadow p-3 mb-5 bg-body rounded" data-aos-duration="2400"> <span class="sp "> <?= $lang["agriculture"];?> :</span><?= $lang["paragriculture"];?></p>
                     <br>
-                    <p data-aos="fade-down" class="shadow p-3 mb-5 bg-light rounded" data-aos-duration="2400"> <span class="sp"> <?= $lang["topographiephotogrammétrie"];?> :</span><?= $lang["partopographiephotogrammétrie"];?></p>
+                    <p data-aos="fade-down" class="shadow p-3 mb-5 bg-body rounded" data-aos-duration="2400"> <span class="sp"> <?= $lang["topographiephotogrammétrie"];?> :</span><?= $lang["partopographiephotogrammétrie"];?></p>
                     <br>
-                    <p data-aos="fade-down" class="shadow p-3 mb-5 bg-light rounded" data-aos-duration="2400"><span class="sp"> <?= $lang["inspectionindustrielle"];?> :</span> <?= $lang["parinspectionindustrielle"];?></p>
+                    <p data-aos="fade-down" class="shadow p-3 mb-5 bg-body rounded" data-aos-duration="2400"><span class="sp"> <?= $lang["inspectionindustrielle"];?> :</span> <?= $lang["parinspectionindustrielle"];?></p>
                     <br>
-                    <p data-aos="fade-down" class="shadow p-3 mb-5 bg-light rounded" data-aos-duration="2400"> <span class="sp"> <?= $lang["audiovisuel"];?> :</span><?= $lang["paraudiovisuel"];?> </p>
+                    <p data-aos="fade-down" class="shadow p-3 mb-5 bg-body rounded" data-aos-duration="2400"> <span class="sp"> <?= $lang["audiovisuel"];?> :</span><?= $lang["paraudiovisuel"];?> </p>
                     <br>
 
                 </div>
@@ -136,62 +94,33 @@ $msg = "";
     </div>
     <div class="contenu ">
 
-        <br> <br> 
-        <h6 class="text-center text-muted">Pour votre projet, nous contacter cliquer ici :<a href="#" class="text-danger" >Nous contacter</a> </h6> 
-        <br><br>
-        
-        <h2><?= $lang["nosservice"]?></h2>
+        <br> <br><br><br>
+        <h2>Nos Service</h2>
         <br> <br>
         <div class="container">
 
-
-            <div class="row  row-cols-1 row-cols-lg-1 g-5">
-<?php 
-
-if(isset($_GET["lang"])){
-    
-    $type="";
-    $description="";
-
-  $lgs = $_GET["lang"];
-  if($lgs=="an"){
-
-    $type="typeinan";
-    $description="descriptionan";
-
-  
-   
-  }else {
-
-    $type="TYPE";
-    $description="DESCRIPTION";
-
-
-  }
-
-}
-
-$stmt = $con->prepare("select *from service");
+            <div class="row  row-cols-1 row-cols-lg-2 g-5">
+<?php  $stmt = $con->prepare("select *from service");
                 $stmt->execute(array());
                 $rows = $stmt->fetchAll(); 
 
                 foreach($rows as $rr){
                     ?>
                     <div class="col">
-                    <div class="card border mb-3 mycards" data-aos="fade-down" data-aos-duration="2000">
+                    <div class="card shadow-lg p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2000">
                         <div class="card-body">
                             <h5 class="card-title text-center">
                                 <?php 
                                 
                                 
-                                echo $rr[$type];
+                                echo $rr["TYPE"];
 
                                 ?></h5>
                             <p class="card-text">
 
 
                                 <?=
-                                 $rr[$description];
+                                 $rr["DESCRIPTION"];
 
                                 ?>
                         </div>
@@ -216,10 +145,10 @@ $stmt = $con->prepare("select *from service");
             <div class="col">
                 <div class="contenu">
                     <br><br><br>
-                    <h2><?= $lang["CEQUENOUSOFFRONS"];?></h2>
+                    <h2>CE QUE NOUS OFFRONS</h2>
 
                     <br>
-                    <p class="text-center"><?= $lang["parCEQUENOUSOFFRONS"]?></p>
+                    <p class="text-center">Creatix Studio vous ouvre de nouvelles perspectives avec ses solutions de drones. Ce n’est que lorsque vous survolez vos projets que vous réalisez à quel point une vue aérienne est incroyablement utile et à grande valeur ajoutée!</p>
                     <br> <br>
                     <div class="accordion" id="accordionExample">
                         <!-- according begin-->
@@ -228,13 +157,18 @@ $stmt = $con->prepare("select *from service");
                         <div class="accordion-item shadow  p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2000">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <h3><?= $lang["traitementagricole"];?></h3>
+                                    <h3> traitement agricole</h3>
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                
-                                        <?= $lang["partraitementagricole"]?>
+                                    <p> <strong>Nous fournissons des services allant de l’analyse multispectrale à l’épandage des traitements phytosanitair</strong> En utilisant notre technologie de drone de pointe, nous accompagnons nos clients dans leur développement technologique en leur offrant des solutions dédiées et l’expertise d’une équipe attentive.</p>
+                                    <p>Imagerie par drone
+
+                                        RGB, Multispectral ou Infrarouge, l’analyse par l’image donne accès à une grande quantité d’informations qui est souvent invisible à l’œil nu.
+
+                                        Nos équipes SIG se servent de ces données à des fins d’analyses et pour vous accompagner dans le plan d’actions à mener sur vos cultures.</p>
+
 
                                     <div class="container">
                                         <div class="row row-cols-1 row-cols-lg-3 g-5">
@@ -259,12 +193,19 @@ $stmt = $con->prepare("select *from service");
                         <div class="accordion-item shadow p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2300">
                             <h2 class="accordion-header" id="headingTow">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTow" aria-expanded="false" aria-controls="collapseTow">
-                                    <h3><?= $lang["PHOTOGRAPHIEIMMOBILIÈRE"]?></h3>
+                                    <h3>PHOTOGRAPHIE IMMOBILIÈRE</h3>
                                 </button>
                             </h2>
                             <div id="collapseTow" class="accordion-collapse collapse" aria-labelledby="headingTow" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                <?= $lang["parPHOTOGRAPHIEIMMOBILIÈRE"]?>
+                                    <p> <strong>Creatix Studio</strong> vous aide à vous démarquer de la concurrence avec nos photographies de qualité supérieure. Nous vous livrons des images et vidéos grand angle et de haute résolution pour mettre en valeur votre propriété et votre projet. Les images et les vidéos sont tournées avec des appareils photos et vidéos professionnels et des objectifs grand angle pour garantir le meilleur rendu et ainsi des photos/vidéos avec des perspectives aériennes uniques.</p>
+                                    <h5>Type de projet : </h5>
+                                    <ul>
+                                        <li>Immobilier commercial,</li>
+                                        <li>Clubs / Hôtel / Terrains de golf,</li>
+                                        <li>Écoles / Universités,</li>
+                                        <li>Projet résidentiels haut de gamme de luxe,</li>
+                                    </ul>
 
                                     <div class="container">
                                         <div class="row row-cols-1 row-cols-lg-3 g-5">
@@ -288,12 +229,21 @@ $stmt = $con->prepare("select *from service");
                         <div class="accordion-item shadow p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2500">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <h3><?= $lang["SITESURVEYEETSUIVIDESOUVRAGES"]?></h3>
+                                    <h3>SITE SURVEY ET SUIVI DES OUVRAGES D’ARTS/CHANTIERS</h3>
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                <?= $lang["parSITESURVEYEETSUIVIDESOUVRAGES"]?>
+                                    <p> <strong>Creatix Studio </strong> documente chaque phase de votre projet de construction depuis l’étude initiale du site jusqu’au projet finalisé/livré. Nos drones fournissent des images aériennes qui améliorent les rapports d’avancement mensuels et fournissent à toute personne associée au projet des informations précieuses tout en leur faisant gagner du temps et de l’argent (capture de riches données aériennes et génération des modèles 3D détaillés).</p>
+                                    <h5>Les Types de projets qui peuvent être exécutés à l’aide de drones couvrent toute la gamme : </h5>
+                                    <ul>
+                                        <li>Suivi précis des chantiers de construction,</li>
+                                        <li>Photogrammétrie des sols et modèle orthographique 2D,</li>
+                                        <li>Cartographie et génération des modèles 3D détaillés(Mapping, Photogrammétrie : Modèle Orthophoto, MNT, MNS,…etc),</li>
+                                        <li>Création de cartes volumétriques des stocks de matériaux pour les sociétés minières,</li>
+                                        <li>Inspection des bâtiments et localisation des défauts de construction,</li>
+
+                                    </ul>
 
                                     <div class="container">
                                         <div class="row row-cols-1 row-cols-lg-3 g-5">
@@ -318,12 +268,21 @@ $stmt = $con->prepare("select *from service");
                         <div class="accordion-item shadow p-3 mb-5 bg-body rounded" data-aos="fade-down" data-aos-duration="2700">
                             <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <h3><?= $lang["INSPECTIONINDUSTRIELLE"]?></h3>
+                                    <h3>INSPECTION INDUSTRIELLE</h3>
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                <?= $lang["parINSPECTIONINDUSTRIELLE"]?>
+                                    <p>La technique d’inspection par drone offre des inspections structurelles, qui sont plus rapides et plus sûres que les méthodes d’accès conventionnelles. Notre technique d’inspection réduit les coûts en supprimant l’exigence de grandes surfaces d’échafaudage et améliore la sécurité en réduisant le besoin de travailler en hauteur. Toutes les inspections sont effectuées par des pilotes experts.</p>
+                                    <h5>Creatix Studio : </h5>
+                                    <ul>
+                                        <li>Des inspections visuelles et thermiques rapprochées et des enquêtes sur les structures hautes, vivantes et difficiles à atteindre des installations industrielles, pétrolières et gazières onshores et offshores,</li>
+                                        <li>Des inspections et des enquêtes dans le secteur des énergies renouvelables, en aidant nos clients à effectuer des inspections des éoliennes et de champ de panneaux photovoltaïques,</li>
+                                        <li>Cartographie et génération des modèles 3D détaillés(Mapping, Photogrammétrie : Modèle Orthophoto, MNT, MNS,…etc),</li>
+                                        <li>Des inspections et des études pour le secteur de l’électricité et des télécommunications. Nous assistons nos clients dans l’inspection des tours de transmission et de distribution,</li>
+                                        <li>Des inspections et des enquêtes dans le secteur maritimes, en aidant nos clients à inspecter leurs structures et travaux sous-marins ainsi que les zones difficilement accessibles,</li>
+
+                                    </ul>
 
                                     <div class="container">
                                         <div class="row row-cols-1 row-cols-lg-3 g-5">
@@ -356,32 +315,16 @@ $stmt = $con->prepare("select *from service");
                         <br><br><br>
 
 
-                        <h2><?= $lang["Demanderunservice"]?> </h2>
-                        <br>
-                       <h6 class="text-primary text-center"> <?= $lang["conditiondemende"]?></h6>
-                        <br>
+                        <h2>Demander un service </h2>
+                        <br><br>
 
                         <?php
                         if (isset($msg) && !empty($msg)) {
-                            if ($msg == "votre demande est bien prise en compte" ||  $msg == "your request is taken into account") { ?>
-                            <script type="module">
-                                swal({
-                                title:"<?=$title;?>",
-                                text: "<?= $msg;?>",
-                                icon: "success",
-                                });                
-                             </script>
-
-                           
+                            if ($msg == "votre demande est bien prise en compte") { ?>
+                                <h5 class="text-success text-center"><?= $msg; ?></h5>
 
                             <?php  } else { ?>
-                                <script type="module">
-                                swal({
-                                title:"<?=$title;?>",
-                                text: "<?= $msg;?>",
-                                icon: "warning",
-                                });                
-                             </script>
+                                <h5 class="text-danger text-center"><?= $msg; ?></h5>
                             <?php   }
 
                             ?>
@@ -390,41 +333,17 @@ $stmt = $con->prepare("select *from service");
                         <form action="" method="post">
 
                             <select class="form-select" aria-label="Default select example" name="selectservice">
-                                <option selected value="NosService"><?= $lang["nosservice"]?></option>
+                                <option selected value="NosService">Nos Service</option>
                                 <?php
 
-if(isset($_GET["lang"])){
-    
-    $type="";
-    $description="";
-
-  $lgs = $_GET["lang"];
-  if($lgs=="an"){
-
-    $type="typeinan";
- 
-
-  
-   
-  }else {
-
-    $type="TYPE";
-  
-
-   
-    
-
-  }
-
-}
-$stmt = $con->prepare("select *from service");
+                                $stmt = $con->prepare("SELECT *from service ");
                                 $stmt->execute(array());
                                 $rows = $stmt->fetchAll();
                                 $count = $stmt->rowCount();
                                 if ($count > 0) {
                                     foreach ($rows as $rr) {
                                 ?>
-                                        <option style="font-weight:700;" class="text-center" value="<?php echo $rr["ID_SERVICE"] ?>"><?php echo $rr[$type] ?></option>
+                                        <option value="<?php echo $rr["ID_SERVICE"] ?>"><?php echo $rr["TYPE"] ?></option>
                                 <?php
 
                                     }
@@ -436,18 +355,10 @@ $stmt = $con->prepare("select *from service");
                             </select>
 
                             <br>
-
-                           <?php if(isset($_SESSION["USER"])) {
-                               ?>
-                                 <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                <input type="submit" class="btn btn-outline-primary btn-lg me-md-2" name="demander" value="<?= $lang["demander"]?>">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <input type="submit" class="btn btn-outline-primary btn-lg me-md-2" name="demander" value="Demandez">
 
                             </div>
-                              
-                               <?php
-                           }
-                              ?>   
-                         
                         </form>
 
                     </div>

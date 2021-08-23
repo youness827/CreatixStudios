@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- logout automatic apres 30 min dinactivit-->
+    <meta http-equiv="refresh" content="1800;url=logout.php">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +16,6 @@
 
     <!-- libraries -->
 
-
     <!-- files css and bootsrap -->
     <link rel="stylesheet" href="<?php echo $bootstrap;?>bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $bootstrap;?>styl.min.css">
@@ -24,12 +25,11 @@
     <!-- Mine css-->
 
     <link rel="stylesheet" href="<?php echo $css;?>nav.css">
-    <link rel="stylesheet" href="<?php echo $css;?>indexx.css"> 
-    <link rel="stylesheet" href="<?php echo $css;?>servic.css">
-    <link rel="stylesheet" href="<?php echo $css;?>bod.css">
+    <link rel="stylesheet" href="<?php echo $css;?>index.css"> 
+    <link rel="stylesheet" href="<?php echo $css;?>service.css">
+    <link rel="stylesheet" href="<?php echo $css;?>body.css">
     <link rel="stylesheet" href="<?php echo $css;?>logi.css">
 
-    <link rel="stylesheet" href="<?php echo $css;?>footer.css">
 
     <!-- font links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title><?php getTitlePage();?> </title>
+    <link rel="stylesheet" href="<?php echo $css;?>footr.css"> 
+
+     <!-- Mine css-->
+
+     <link rel="stylesheet" href="<?php echo $css;?>nav.css">
+    <link rel="stylesheet" href="<?php echo $css;?>inde.css"> 
+    <link rel="stylesheet" href="<?php echo $css;?>service.css">
+    <link rel="stylesheet" href="<?php echo $css;?>body.css">
+    <link rel="stylesheet" href="<?php echo $css;?>logi.css">
+
 </head>
 <body>
     

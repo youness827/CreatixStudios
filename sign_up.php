@@ -2,11 +2,13 @@
 
 $titlePage = "Se Connecter";
 include("initFile/init.php");
+$msgs="";
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 
     /*login */
 
     if(isset($_POST["submit"])){
+
         $nom = htmlspecialchars(trim($_POST["nom"])); 
         $prénom = htmlspecialchars(trim($_POST["prénom"]));
         $adresse = htmlspecialchars(trim($_POST["adresse"])); 
@@ -16,6 +18,35 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $statut = 1;//USER 
             
              if(!(empty($email) && empty($apss) && empty($nom) && empty($prénom) && empty($adresse) && empty($tel) && $statut!=0)) {
+
+
+                $stmt = $con->prepare('SELECT *from compte where EMAIL = ? LIMIT 1');
+                $stmt->execute(array($email));
+                $rows_c=$stmt->fetch();    
+                $rows_c = $stmt->rowCount();
+if($rows_c >0){
+    if(isset($_GET["lang"])){
+                                                    
+                                                
+        $lgs = $_GET["lang"];
+        if($lgs=="an"){
+
+            
+            $msgs ="this account already exists";
+
+         
+        }else {
+
+            $msgs = "ce compte déja existe";
+
+            
+
+        }
+
+        }
+
+}else{
+
 
 
                         $stmt = $con->prepare('INSERT INTO client
@@ -33,9 +64,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                             $stmt->execute(array());
                            $row_cll = $stmt->fetch();
                            $row_count= $stmt->rowCount();
-                                    print_r($row_cll);
-                                    print_r($row_count);
+                                   
                            if($row_count>0){
+
+
+
 
                                             $stmt = $con->prepare('INSERT INTO compte
                                             (ID_CLIENT,EMAIL,MOTE_DE_PASS,STATUT) 
@@ -44,15 +77,29 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                                             $row_cmpt = $stmt->rowCount();
                                             if($row_cmpt>0){
 
+                                                    ?>
 
-                                            
-                                                header("location:login.php");
-                                                exit();
+
+                                                <script>
+                                                window.location.href="login.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>";
+                                                 </script>
+                                           
+                                           <?php
+                                               
+                                              
 
 
                                             }else{
-                                                header("location:sign_up.php");
-                                                exit();
+
+                                              ?>
+
+                                                    
+                                                <script>
+                                                window.location.href="sign_up.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>";
+                                                 </script>
+                                           
+                                           <?php
+                                                
 
                                             }
                            }
@@ -63,7 +110,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                         }
                     
                    
-
+                    }
 
             }
 
@@ -97,23 +144,25 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                                 <div class="contenu">
                                 <form action="#" method="post" autocomplete="off" >
                                     <br><br> <br>
-                                    <h2 class="text-center ">S'inscrire</h2>
-                                    <br><br>  
+                                    <h2 class="text-center "><?= $lang["Sinscrire"] ?></h2>
+                                    <br>
+                                    <h5 class="text-danger text-center"><?php if(isset($msgs)) echo $msgs;?></h5>
+                                    
                                     <div class="mb-3">
                                         <div class="inputwithicon"> 
-                                        <input autocomplete="off" type="text" class="form-control" required  name="nom" placeholder="nom">
+                                        <input autocomplete="off" type="text" class="form-control" required  name="nom" placeholder="<?= $lang["nom"]?>">
                                         <i class="fas fa-user-edit"></i>
                                         </div>
                                     </div>
                                     <div class="mb-3">
                                         <div class="inputwithicon"> 
-                                        <input autocomplete="off" type="text" class="form-control" required  name="prénom" placeholder="prénom">
+                                        <input autocomplete="off" type="text" class="form-control" required  name="prénom" placeholder="<?= $lang["prenom"]?>">
                                         <i class="fas fa-user-edit"></i>
                                         </div>
                                     </div> 
                                     <div class="mb-3">
                                         <div class="inputwithicon"> 
-                                        <input autocomplete="off" type="text" class="form-control" required  name="adresse" placeholder="adresse">
+                                        <input autocomplete="off" type="text" class="form-control" required  name="adresse" placeholder="<?= $lang["adress"]?>">
                                         <i class="fas fa-map-marked"></i>
                                         </div>
                                     </div>
@@ -131,7 +180,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                                     </div>
                                     <div class="mb-3">
                                         <div class="inputwithicon"> 
-                                        <input  type="password" id="password" class="form-control" required  autocomplete="new-password" id="inputPassword" name="pass" placeholder="mote de pass">
+                                        <input  type="password" id="password" class="form-control" required  autocomplete="new-password" id="inputPassword" name="pass" placeholder="<?= $lang["motedepass"]?>">
                                         
                                         <i id="eye" class="fas fa-eye"></i>
                                         </div> 
@@ -139,14 +188,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                                     </div>
                                     
                                     <div class="d-grid gap-2 col-6 mx-auto">
-                                        <input  class="btn btn-outline-primary btnbtn" type="submit" name="submit" value="S'identifier"/>
+                                        <input  class="btn btn-outline-primary btnbtn" type="submit" name="submit" value="<?= $lang["sdentifier"]?>"/>
 
                                     </div> 
                                 </form>
                                 <br>
                                 <p class="text-muted text-center">
 
-                                Si vous avez déjà un compte Identifiez-vous !!<a href="login.php">Se connecter</a> 
+                               <?= $lang["Sivousavezdéjàun ompteIdentifiez-vous!!"]?> <a href="login.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"><?= $lang["sdentifier"]?></a> 
 
                                 </p>
                                 </div>

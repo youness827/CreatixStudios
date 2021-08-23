@@ -1,3 +1,6 @@
+.swal-overlay {
+   background-color: rgba(25, 124, 238, 0.45);
+ }
 .navbar{
    display: flex;
 }
@@ -180,4 +183,67 @@ background-color: rgb(61, 3, 3);
        transform: scale(1);
        opacity: 0;
    }
-}*/
+}
+*/
+
+/*icons social media*/
+
+ 
+.socialmedia ul {
+   position:absolute;
+   top:50%;
+   right:0;
+   transform: translate(-50%, -50%);
+   margin:0;
+   padding:0;
+   display:flex;
+   overflow: hidden;
+ }
+ 
+ .socialmedia ul li {
+   list-style: none;
+ }
+ 
+.socialmedia ul li a {
+ 
+   width:40px;
+  
+   text-align:center;
+   margin:0 10px;
+
+   text-decoration:none;
+   transition: .5s;
+   overflow: hidden;
+ }
+ 
+ .socialmedia ul li a:hover {
+  
+   text-decoration:none;
+ }
+ 
+ .socialmedia ul li a .fab {
+  
+   font-size:24px;
+   color: #262626;
+   transition: .5s;
+ }
+ 
+ .socialmedia ul li:nth-child(1) a:hover .fab {
+   color: #0e47c2;
+ }
+ 
+ .socialmedia ul li:nth-child(2) a:hover .fab {
+   color: #00aced;
+ }
+ 
+ .socialmedia ul li:nth-child(3) a:hover .fab {
+   color: #dd4b39;
+ }
+ 
+
+ 
+.socialmedia ul li:nth-child(4) a:hover .fab {
+   color: #ac1e38;
+ }
+
+ 

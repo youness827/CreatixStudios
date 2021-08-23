@@ -92,14 +92,13 @@ z-index: 25;
    
 }
 
+.notreexpertise {
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    background-color: #222d35 !important;
 
-.notreexpertise{
-    height:auto;
-    width:100%;
-    padding: 20px;
-    background-color: #1a446d  !important
-   
-
+    box-shadow: 13px 5px 39px 27px #1c1c239c;
 }
 
 
@@ -130,3 +129,39 @@ ul.a{
 
 }
 
+.notrequalité {
+    background-color: #8f2b2b !important;
+    padding: 61px;
+    margin: 5px;
+    box-shadow: 13px 5px 39px 27px #ff68536e;
+}
+
+.mycard{
+    border-radius:7%;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(236, 43, 43, 0.507), 0 0 6px rgba(250, 0, 0, 0.301);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.mycard:hover{
+    transform: scale(1.2);
+   box-shadow: 0 6px 20px rgb(238, 179, 225), 0 0 6px rgba(255, 2, 179, 0.637);
+   background-color: rgba(255, 232, 248, 0.445);
+   transition: all 0.3s;
+
+}
+
+.mycard h5{
+  font-weight: 600;
+}
+.border {
+    border: 1px solid #ff00cc96!important;
+}
+
+.card-img, .card-img-top {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    border-radius: 3%;
+}
