@@ -25,7 +25,7 @@ $msg = "";
                 //table commande 
 
                 $stmt = $con->prepare("INSERT INTO commande(ID_CLIENT,DATE) VALUES (?,?)");
-                $stmt->execute(array($_SESSION["iduser"], date('d-m-y h:i:s')));
+                $stmt->execute(array($_SESSION["iduser"], date('y-m-d')));
                 $count = $stmt->rowCount();
                 if ($count > 0) {
 
@@ -137,8 +137,8 @@ $msg = "";
     <div class="contenu ">
 
         <br> <br> 
-        <h6 class="text-center text-muted">Pour votre projet, nous contacter cliquer ici :<a href="#" class="text-danger" >Nous contacter</a> </h6> 
-        <br><br>
+        <h6 class="text-center text-muted"><?=$lang["contacter"];?> :<a href="contactus.php" class="text-danger" >Nous contacter</a> </h6> 
+        <br><br>  <br><br><br>
         
         <h2><?= $lang["nosservice"]?></h2>
         <br> <br>
@@ -178,7 +178,7 @@ $stmt = $con->prepare("select *from service");
                 foreach($rows as $rr){
                     ?>
                     <div class="col">
-                    <div class="card border mb-3 mycards" data-aos="fade-down" data-aos-duration="2000">
+                    <div class="card border mb-3 mycardcards" data-aos="fade-down" data-aos-duration="2000">
                         <div class="card-body">
                             <h5 class="card-title text-center">
                                 <?php 
@@ -437,7 +437,7 @@ $stmt = $con->prepare("select *from service");
 
                             <br>
 
-                           <?php if(isset($_SESSION["USER"])) {
+                           <?php if(!isset($_SESSION["ADMIN"])) {
                                ?>
                                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                 <input type="submit" class="btn btn-outline-primary btn-lg me-md-2" name="demander" value="<?= $lang["demander"]?>">

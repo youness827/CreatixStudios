@@ -22,14 +22,7 @@
     <!-- File cdn bootsrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Mine css-->
-
-    <link rel="stylesheet" href="<?php echo $css;?>nav.css">
-    <link rel="stylesheet" href="<?php echo $css;?>index.css"> 
-    <link rel="stylesheet" href="<?php echo $css;?>service.css">
-    <link rel="stylesheet" href="<?php echo $css;?>body.css">
-    <link rel="stylesheet" href="<?php echo $css;?>logi.css">
-
+  
 
     <!-- font links -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,12 +39,13 @@
 
      <!-- Mine css-->
 
-     <link rel="stylesheet" href="<?php echo $css;?>nav.css">
-    <link rel="stylesheet" href="<?php echo $css;?>inde.css"> 
-    <link rel="stylesheet" href="<?php echo $css;?>service.css">
-    <link rel="stylesheet" href="<?php echo $css;?>body.css">
+     <link rel="stylesheet" href="<?php echo $css;?>navv.css">
+    <link rel="stylesheet" href="<?php echo $css;?>index.css"> 
+    <link rel="stylesheet" href="<?php echo $css;?>bodyy.css">
+    <link rel="stylesheet" href="<?php echo $css;?>services.css">
+ 
     <link rel="stylesheet" href="<?php echo $css;?>logi.css">
-
+    <link rel="stylesheet" href="<?php echo $css;?>aboutuus.css">
 </head>
 <body>
     

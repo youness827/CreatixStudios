@@ -10,7 +10,7 @@ $languages="?lang=fr";
     <div class="loader"></div>
 </div>
 
-<nav class="navbar navbar-light bg-light text-end">
+<nav class="navbar navbar-light bg-white text-end">
 
   <p class="text-center">
   
@@ -32,7 +32,7 @@ $languages="?lang=fr";
 
 
 </nav>
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar navbar-expand-lg navbar-light bg-white ">
   <div class="container-fluid ">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@ $languages="?lang=fr";
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto" >
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"> <?= $lang["acceuil"] ?></a>
+          <a class="btn btn-outline-dark" aria-current="page" href="index.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"><i class="fas fa-home"></i> <?= $lang["acceuil"] ?></a>
         </li>
      
       </ul>  
@@ -79,19 +79,55 @@ $languages="?lang=fr";
       
 
       </ul> 
-      
-      <ul class="navbar-nav mx-auto" >
+     
+  
+      <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <i class="far fa-bookmark"></i>&nbsp;&nbsp;  Commandes/Messages</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  <br><br><br>  <br><br><br>  <br><br><br>
+  <h3 class="text-left">Les Commandes</h3>
+  <br><br> 
+  <ul class="navbar-nav mx-auto" >
       <li class="nav-item">
-          <a  class=" btn btn-outline-primary" href="indexAd.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>"><i class="fas fa-user-cog"></i>&nbsp;  Commande</a>
+      <a   class=" btn btn-outline-danger"  href="?listecommnadeclient=true"  >&nbsp;&nbsp;  Services</a>
           
       </li>
       
-  
+
       </ul> 
+      <br><br>
+  <ul class="navbar-nav mx-auto" >
+      <li class="nav-item">
+      <a   class=" btn btn-outline-danger" href="indexAd.php?listecommnadeclientFormation=true"  >&nbsp;  Formations</a>
+          
+      </li>
       
-     
+
+      </ul> 
+      <br>
+
+      <br><br>
+      <h3 class="text-left">Les Messages des Clients</h3>
+
+      <br><br>
+      <ul class="navbar-nav mx-auto" >
+      <li class="nav-item">
+      <a   class=" btn btn-outline-danger" href="indexAd.php?messagecl=true"  >&nbsp;   Messages Client</a>
+          
+      </li>
       
-   
+
+      </ul> 
+
+
+  </div>
+</div>
+
 
  
 

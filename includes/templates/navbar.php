@@ -9,29 +9,39 @@ $languages = "?lang=fr";
   <div class="loader"></div>
 </div>
 
-<nav class="navbar navbar-light bg-light text-end ">
+<nav class="navbar navbar-wihte bg-white text-end ">
 
-  <p class="text-center">
+  <p class="text-center languagess">
 
-    <?= $lang["lang"]; ?> -
-    <a name="langs" href="?lang=fr"> <?= $lang["fr"] ?> / </a>
-    <a name="langs" href="?lang=an"> <?= $lang["an"] ?> </a>
+    <span class="fw-bolder"> <?= $lang["lang"]; ?>
+      --</span> &nbsp;
+    <img src="https://img.icons8.com/color/30/000000/france.png" /> <a class="fw-bolder" name="langs" href="?lang=fr"> <?= $lang["fr"] ?> </a>&nbsp;/&nbsp;
+    <img src="https://img.icons8.com/color/30/000000/england.png" /> <a class="fw-bolder" name="langs" href="?lang=an"> <?= $lang["an"] ?> </a>
 
   </p>
 
+
   <div class="socialmedia">
     <ul>
-      <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+      <li>
+        <!-- Facebook -->
+        <a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+      </li>
 
-      <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a class="btn btn-primary" style="background-color: #55acee;" href="#!" role="button"><i class="fab fa-twitter"></i></a></li>
+      <li>
+        <!-- Google -->
+        <a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"><i class="fab fa-google"></i></a>
+      </li>
+      <li><a class="btn btn-primary" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a></li>
+
+      <li><a class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button"><i class="fab fa-whatsapp"></i></a></li>
     </ul>
   </div>
 
 
 </nav>
-<nav class="navbar navbar-expand-xxl navbar-light bg-light ">
+<nav class="navbar navbar-expand-xxl navbar-light bg-white ">
   <div class="container-fluid ">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +59,7 @@ $languages = "?lang=fr";
           <a class="nav-link" href="#?lang=<?php if (isset($_GET["lang"])) echo $_GET["lang"]; ?>"> <?= $lang["nofromation"] ?></a>
         </li>
         <li class="nav-item" data-aos="zoom-in" data-aos-duration="2000">
-          <a class="nav-link" href="#?lang=<?php if (isset($_GET["lang"])) echo $_GET["lang"]; ?>"> <?= $lang["proposdenous"] ?></a>
+          <a class="nav-link" href="proposdenous.php?lang=<?php if (isset($_GET["lang"])) echo $_GET["lang"]; ?>"> <?= $lang["proposdenous"] ?></a>
         </li>
 
 
@@ -75,7 +85,7 @@ $languages = "?lang=fr";
       ?>
         <ul class="navbar-nav mx-auto">
           <li class="nav-item" data-aos="zoom-in" data-aos-duration="2000">
-            <a class=" btn btn-outline-primary" href="indexAd.php?compteadmin=true&lang=<?php if (isset($_GET["lang"])) echo $_GET["lang"]; ?>"><i class="fas fa-user-cog"></i>&nbsp;Dashboard Admin</a>
+            <a class=" btn btn-outline-primary pulse-danger " href="indexAd.php?compteadmin=true&lang=<?php if (isset($_GET["lang"])) echo $_GET["lang"]; ?>"><i class="fas fa-user-cog"></i>&nbsp;Dashboard Admin</a>
 
           </li>
 
@@ -128,64 +138,7 @@ $languages = "?lang=fr";
 
 
 
-<nav class="navbar navbar-light bg-light ">
-  <?php if (isset($_SESSION["admin"])) {
-  ?>
-
-    <div class="container">
-    <br><br>
-      <div class="row row-cols-1 row-cols-md-2 g-5">
-       
-          
-        <?php 
-       /* $var = 0;
-        $stmt = $con->prepare("SELECT * FROM `commande`");
-        $stmt->execute(array());
-        $rows=$stmt->fetchAll();
-        $counts = $stmt->rowCount();
-   */
-        $stmt = $con->prepare("SELECT * FROM `commande` WHERE date = DATE_FORMAT(SYSDATE(), '%Y-%m-%d')");
-        $stmt->execute(array());
-        $rows=$stmt->fetchAll();
-        $counts = $stmt->rowCount();
-        if($counts>0){
-          ?>
- <div class="col">
-          <div class="alert alert-info alert-dismissible fade show" role="alert">
-            <strong>Vous avez une nouvelle commande</strong> 
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        </div>
-          <?php
-        }
-        
-        ?>
-
-
-
-
-
-
-        <div class="col">
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        </div>
-
-
-
-
-      </div>
-    </div>
-
-
-  <?php
-  } ?>
+<nav class="navbar navbar-light bg-white ">
 
 </nav>
 

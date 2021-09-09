@@ -8,51 +8,16 @@ include("initFile/init.php");
 ?>
 
 <!-- Carsouual -->
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-aos="zoom-in" data-aos-duration="1500" data-bs-ride="carousel" >
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="<?php echo $images; ?>AgrasT20.jpg" class="d-block w-100" alt="">
-      <div class="carousel-caption d-none d-sm-block">
-        <h4>AgrasT20</h4>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="<?php echo $images; ?>drone.jpg" class="d-block w-100" alt="">
-      <div class="carousel-caption d-none d-sm-block">
-        <h4>M300RTK</h4>
-      </div>
-    </div>
 
-    <div class="carousel-item">
-      <img src="<?php echo $images; ?>Matric-210-3.jpg" class="d-block w-100" alt="">
-      <div class="carousel-caption d-none d-sm-block">
-        <h4>MATRICE-200 SERIES V2</h4>
-      </div>
-    </div>
+<img src="<?php echo $images; ?>aeroscope-1.png" class="imagesindex" alt="...">
+<div class="indeximages">
 
-    <div class="carousel-item">
-      <img src="<?php echo $images; ?>M600PRO.jpg" class="d-block w-100" alt="">
-      <div class="carousel-caption d-none d-sm-block">
-        <h4>MATRICE 600 PRO</h4>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="<?php echo $images; ?>aeroscope-1.png" class="d-block w-100" alt="">
-      <div class="carousel-caption d-none d-sm-block">
-        <h4>Aeroscope-1</h4>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <h2 class="text-center fw-bolder">Creatix Studio</h2>
+    <br><br>
+    <h1 class="text-center fw-bolder "><?=$lang["LEADER"]?></h1>
+
+
 </div>
-
 <!-- Body index -->
 <div class="bodyIndex">
   <br><br>
@@ -78,7 +43,6 @@ include("initFile/init.php");
           <img src="<?php echo $images; ?>livraison-par-drone.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"><?= $lang["danslalogistique"]?> </h5>
-            <h6   class="card-title text-right text-danger">en savoir plus </h6>
           </div>
         </div>
       </div>
@@ -87,7 +51,6 @@ include("initFile/init.php");
           <img src="<?php echo $images; ?>vue-aerienne-agriculture.jpg" class="card-img-top" alt="...">
           <div class="card-body ">
             <h5 class="card-title"><?= $lang["danslaagriculture"]?></h5>
-            <h6   class="card-title text-right text-danger">en savoir plus </h6>
           </div>
         </div>
       </div>
@@ -96,7 +59,6 @@ include("initFile/init.php");
           <img src="<?php echo $images; ?>drone-controle.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"><?= $lang["danslasécurité"]?></h5>
-            <h6   class="card-title text-right text-danger">en savoir plus </h6>
           </div>
         </div>
       </div>
@@ -106,7 +68,6 @@ include("initFile/init.php");
           <img src="<?php echo $images; ?>vue-aerienne-satellite-drone.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"><?= $lang["aménagementduterritoire"]?></h5>
-            <h6   class="card-title text-right text-danger">en savoir plus </h6>
           </div>
         </div>
       </div>
@@ -115,7 +76,6 @@ include("initFile/init.php");
           <img src="<?php echo $images; ?>drone-camera.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"><?= $lang["dronedinspection"]?></h5>
-            <h6   class="card-title text-right text-danger">en savoir plus </h6>
           </div>
         </div>
       </div>
@@ -124,7 +84,6 @@ include("initFile/init.php");
           <img src="<?php echo $images; ?>drone-vue-aerienne-port.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"> <?= $lang["laudiovisuel"]?></h5>
-            <h6   class="card-title text-right text-danger">en savoir plus </h6>
           </div>
         </div>
       </div>
@@ -158,12 +117,12 @@ include("initFile/init.php");
   <br> <br>  <br> <br>
   <div class="contenu"  > 
   <div class="container">
-    <div class=" row row-cols-1 row-cols-md-3 g-5 ">
+    <div class=" row row-cols-1 row-cols-lg-3 g-5 ">
    
     
     <div class="col">
        
-        <div class="card border mb-3 mycard" data-aos="zoom-in-right"
+        <div class="card border mb-3 mycards" data-aos="zoom-in-right"
      data-aos-duration="1500">
           <div class="card-body">
             <h2 class="card-title text-center shadow-lg p-3 mb-5 bg-body rounded" ><?= $lang["LAVUEAÉRIEN"]?></h2>
@@ -174,7 +133,7 @@ include("initFile/init.php");
       </div>
 
       <div class="col">
-        <div class="card border mb-3 mycard"  data-aos="zoom-in"
+        <div class="card border mb-3 mycards"  data-aos="zoom-in"
      data-aos-duration="1500" >
           <div class="card-body">
             <h2 class="card-title text-center shadow-lg p-3 mb-5 bg-body rounded" ><?= $lang["4K/5K/6KVIDEOS"]?></h2>
@@ -184,7 +143,7 @@ include("initFile/init.php");
         </div>
       </div>
       <div class="col">
-        <div class="card border mb-3 mycard" data-aos="zoom-in-left"
+        <div class="card border mb-3 mycards" data-aos="zoom-in-left"
      data-aos-duration="1500" >
           <div class="card-body">
             <h2 class="card-title text-center shadow-lg p-3 mb-5 bg-body rounded" > <?= $lang["PROJET"]?> </h2>
@@ -344,7 +303,7 @@ include("initFile/init.php");
     <div class="notrequalité"> 
 
     <div class="contenu"  > 
-      <h2 class="text-center text-light ">NOUS SOMMES SUR LA QUALITÉ ET LA CONFIANCE.</h2> 
+      <h2 class="text-center text-light "><?=$lang["NOUSSOMMES"]?></h2> 
       <br><br><br>
   <div class="container">
     <div class=" row row-cols-1 row-cols-lg-3 g-5 ">
@@ -352,35 +311,35 @@ include("initFile/init.php");
     
     <div class="col">
        
-        <div class="card border-light mb-3 mycard" data-aos="zoom-in-right"
+        <div class="card border-light mb-3 " data-aos="zoom-in-right"
      data-aos-duration="1500">
           <div class="card-body">
-            <h4 class="card-title text-center shadow-lg p-3 mb-5 bg-body rounded"  style="font-weight: 800;"><i class="fas fa-clipboard-check"></i>  &nbsp;&nbsp;QUALITÉ</h4>
+            <h4 class="card-title text-center shadow-lg p-3 mb-5 bg-body rounded"  style="font-weight: 800;"><i class="fas fa-clipboard-check"></i>  &nbsp;&nbsp;<?= $lang["QUALITÉ"]?></h4>
             <br>
-            <p class="card-text text-md-start text-muted"  >Nos services sont de haute qualité, et nous continuons à améliorer nos processus pour toujours répondre à vos attentes</p>
+            <p class="card-text text-md-start text-muted"  ><?= $lang["qualitepar"]?></p>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card border-light mb-3 mycard"  data-aos="zoom-in"
+        <div class="card border-light mb-3 "  data-aos="zoom-in"
      data-aos-duration="1500" >
           <div class="card-body">
-            <h4 class="card-title text-center shadow-lg p-3 mb-5 bg-body rounded" style="font-weight: 800;" > <i class="fas fa-gem"></i> &nbsp;&nbsp;PROFESSIONNEL</h4>
+            <h4 class="card-title text-center shadow-lg p-3 mb-5 bg-body rounded" style="font-weight: 800;" > <i class="fas fa-gem"></i> &nbsp;&nbsp;<?= $lang["PROFESSIONNEL"]?></h4>
             <br>
-            <p class="card-text text-md-start text-muted">Une équipe de professionnels experts est à votre disposition pour vous écouter, vous assister et réussir ensemble vos projets</p>
+            <p class="card-text text-md-start text-muted"><?= $lang["profpar"]?></p>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card border-light mb-3 mycard" data-aos="zoom-in-left"
+        <div class="card border-light mb-3 " data-aos="zoom-in-left"
      data-aos-duration="1500" >
           <div class="card-body">
-            <h4 class="card-title text-center shadow-lg p-3 mb-5 bg-body rounded"  style="font-weight: 800;"> <i class="fas fa-handshake"></i> &nbsp;&nbsp;CONFIANCE</h4>
+            <h4 class="card-title text-center shadow-lg p-3 mb-5 bg-body rounded"  style="font-weight: 800;"> <i class="fas fa-handshake"></i> &nbsp;&nbsp;<?= $lang["CONFIANCE"]?></h4>
             <br>
             <p class="card-text text-md-start text-muted" >
 
-Vous nous confiez vos projets, nous seront à la hauteur de votre confiance et nous traiterons vos projets dans la totale discrétion.</p>
+            <?= $lang["confpar"]?></p>
           </div>
         </div>
       </div>

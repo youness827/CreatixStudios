@@ -30,8 +30,16 @@ include("initFile/init.php");
 
                  if(isset($_GET["listeclient"]) && $_GET["listeclient"]=="true"){
                     include "affichclient.php";
+                }     
+                 if(isset($_GET["listecommnadeclient"]) && $_GET["listecommnadeclient"]=="true"){
+                    include "listecommnadeclient.php";
                 }
-
+                if(isset($_GET["listecommnadeclientFormation"]) && $_GET["listecommnadeclientFormation"]=="true"){
+                    include "listecommnadeclientFormation.php";
+                }
+                if(isset($_GET["messagecl"]) && $_GET["messagecl"]=="true"){
+                    include "messagesclient.php";
+                }
 
                 if(isset($_GET["servicegestion"])&& $_GET["servicegestion"]=="true"){
                     include "gestion_service.php";

@@ -100,16 +100,16 @@ swal({
                         <div class="col-md-12">
                             <div class="card-body">
                             <h3>Liste des Clients</h3>
-                            <br> 
+                            <br> <!--
                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                                         <a  class="btn btn-outline-primary btnbtn"  href="indexAd.php?clientfidéle=true&lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>" > <i class="fas fa-users"></i>&nbsp;&nbsp;Les client fidéle</a> 
 
                                    
                                     
 
-</div>
+</div>-->
                             <br> 
-                            <div class="table-responsive-md">
+                            <div class="table-responsive-xl">
 
                                 <table class="table table-bordered  table-hover" style="width: 100%;">
                                        
@@ -147,10 +147,7 @@ swal({
                                             
                                             <td> 
                                             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                     
-                                            <a class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Commande client"  href="?commandeclient=true&idclient=<?= urlencode(base64_encode($row["ID_CLIENT"]))?>"><i class="fas fa-clipboard-list"></i></a> 
-
-                                                &nbsp;&nbsp;
+                         
                                         <button type="button" class="btn btn-outline-danger deletebtn">
                                         <i class="fas fa-trash-alt"></i>
                                         </button>
@@ -246,9 +243,9 @@ swal({
                                             <tr>
                                             <td><?= $row["ID_CLIENT"];?></td> 
                                            <td><?= $row["NOM"];?></td> 
-                                            <th><?= $row["PRENOM"];?></th>
+                                            <td><?= $row["PRENOM"];?></td>
                                             <td><?= $row["ADRESS"];?></td>
-                                            <th><?= $row["TEL"];?></th>
+                                            <td><?= $row["TEL"];?></td>
                                             <td><?= $row["EMAIL"];?></td>
 
                                             
@@ -319,6 +316,13 @@ swal({
     </div>
   </div>
 </div>
+<br> <br>
+<br> <br>
+<br> <br><br>
+<br> <br>
+<br> <br><br>
+<br> <br><br>
+
 <?php 
 include("includes/templates/ff.php");
 
@@ -350,7 +354,3 @@ $(document).ready(function(){
 </script>
 
      
-
-<br> <br>
-<br> <br><br>
-<br> <br><br>

@@ -53,6 +53,24 @@ $lang["aménagementduterritoire"]="For land use planning";
 $lang["dronedinspection"]="The inspection drone";
 $lang["laudiovisuel"]="the audiovisual professions";
 
+$lang["NOUSSOMMES"]="WE ARE ON QUALITY AND TRUST.";
+$lang["QUALITÉ"]="QUALITY";
+$lang["qualitepar"]="our services are of high quality, and we continue to improve our processes to always meet your expectations";
+
+$lang["PROFESSIONNEL"]="PROFESSIONNEL";
+$lang["profpar"]="a team of professional experts is at your disposal to listen to you, assist you and make your projects a success together";
+
+$lang["CONFIANCE"]="CONFIDENCE";
+$lang["confpar"]="you entrust us with your projects, we will live up to your trust and we will treat your projects with total discretion.";
+
+
+
+
+
+
+
+
+
 /*----------------------------*/
 
 $lang["DRONEAVANTAGESSOLUTIONSPERSONNALISÉES"]="DRONE BENEFITS & CUSTOM SOLUTIONS";
@@ -222,5 +240,150 @@ $lang["conditiondemende"]="to be able to place your order you need to register f
 $lang["nosservice"]="Our services";
 
 $lang["demander"]="Send";
+/**/
+$lang["contacter"]="To contact us, click here";
+
+
+
+
+
+/*prpose de nous*/
+$lang["LEADER"]="LEADER OF DRONES IN MOROCCO";
+$lang["quisomme"]="WHO WE ARE ?";
+
+$lang["dronesol"]=" Drone Solution Industry";
+$lang["Opérateur"]="Drone operator at the service of professionals";
+$lang["opérateutpar"]="CREATIX STUDIO is a drone company
+which intervenes everywhere in Morocco and in Africa. <br>
+With more than 5 years of experience in the service of
+professionals in many sectors of activity
+of activity, it has developed a real expertise
+in the technical analysis and the
+audiovisual production. <br> Forerunner in Morocco,
+CREATIX STUDIO is regularly brought to collaborate
+to collaborate with large Moroccan companies
+Moroccan companies for the realization of shots ";
+
+$lang["proposeservice"]="Offers photogrammetry services by
+for the creation of 3D models in order to provide
+provide technical data useful for topographic surveys, or for the design of
+design. <br> <br> The company also uses drone thermography. This technique is used
+in the inspection of photovoltaic panels, the
+detection of heat leaks and the realization of
+thermal diagnosis. <br> <br> Mobility and extended field of action are the main assets of the drone.
+It is an essential tool to reach inaccessible areas.
+inaccessible areas. br This is why
+CREATIX STUDIO carries out drone inspections of
+of structures, roofs, wind turbines, industrial sites.";
+
+$lang["faitpartie"]="is one of the pioneer companies in Morocco ";
+$lang["imagerie"]="Aerial imaging for a wide range of clients";
+$lang["prestationpardrone"]="The drone services of CREATIX STUDIO are likely to be of interest to all
+public. The company does not limit itself to working with clients on a local level, as its
+The company does not only work with local clients, but also with national and international clients. <br>
+Regularly solicited for photogrammetry and thermography services
+thermography,
+CREATIX STUDIO has been able to expand its field of action and surround itself with partners complementary to its activity in order to respond to different types of customers. <The objective
+To provide professionals with the visual support and data they need. <br> In search of
+looking for an effective communication tool and a visual support made in a perfect
+professionals in the real estate and tourism industries to communicate about local events
+to communicate about local events or to promote the tourist attractions of a region.
+region. <The arrival of the drone in the field of the image caused a small revolution. <br>
+Indeed, this device has opened the way to a type of photo previously reserved for pilots
+of helicopters, ULM and other flying machines: the aerial photo. <Today, it is an
+Today, it is an essential tool and a real asset for many professionals. <The drone is of
+nature a valuable ally in terms of mobility. By going where the photographer can not
+it allows to photograph a subject under new angles. To seize a place in
+its whole, to anchor an element in a decoration, to promote a material or natural heritage.
+or natural heritage... <br><br>
+If the possibilities are infinite, the result is always there.
+In aerial photography, the field of possibilities is wide. Among the services by drone
+that CREATIX STUDIO offers, one finds in particular the creation of aerial panoramas
+180° aerial panoramas as well as 360° virtual tours. A powerful format,
+effective to enhance a subject and mark the viewer.";
+$lang["pourquoi"]="Why choose creatix studio ?";
+$lang["exper"]="Experience in the field of
+by drone";
+$lang["Spécialistédelaprise"]="  Specialized in aerial photography 
+for 5 years 
+What is aerial photography 
+aerial photography";
+$lang["Noussommes"]="
+We are equipped with the most recent drones 
+on the market. These aircraft 
+are equipped with cameras or photo-captors capable of capturing high quality 
+images in high quality, dedicated to the 
+realization
+of aerial photographs and videos. 
+<br><br>
+The shots are intended to be 
+exploited by all types of broadcasting media 
+broadcasting: television, cinema, Web, 
+paper, etc.. 
+In order to always guarantee you a service 
+service that meets your requirements, 
+we take care to capture the best aerial 
+aerial views from take-off to 
+landing.
+<br>
+Creatix studio, with its 5 years of experience and always at the forefront of 
+technology, offers you four types of 
+types of interventions.
+";
+
+$lang["Pourplusdétails"]="For more details, click here";
+
+$lang["Modélisation3Dpardrone"]="3D modeling by drone";
+$lang["Photogrammétrie"]="Photogrammetry";
+$lang["Prestationspardrone"]="Drone services for 
+real estate";
+$lang["inspectiontemp"]="Real-time inspection";
+$lang["Orthophotographieaérienne"]="Aerial Orthophotography ";
+$lang["Réalitévirtuelle"]="Virtual reality by drone";
+$lang["inspectionouvrage"]="inspection of works";
+$lang["sécuritébâtiment"]="building security";
+
+
+$lang["Fondateur"]="Owner";
+$lang["fondateurpar"]="  <li>Drone piloting ,Aerial photography
+</li>
+<li>  Photogrammetry by drone
+</li>
+<li>Underwater shooting Ground shooting Photography
+</li>
+<li>Video editing Computer graphics Photo editing
+</li> 
+<li> I.U.L.M </li>
+<li>D.G.A.C
+</li>";
+/* contacter us */ 
+
+$lang["paragcont"]=" CREATIX STUDIO is a drone company
+which intervenes everywhere in Morocco and in Africa.
+With more than 5 years of experience in the service of
+professionals in many sectors of activity
+in many sectors of activity, it has developed a real expertise
+in technical analysis and audiovisual production
+audiovisual production. Forerunner in Morocco,
+CREATIX STUDIO is regularly brought to collaborate
+to collaborate with large Moroccan companies
+companies for the realization of shots";
+$lang["ENTRERENCONTACT"]="GET IN TOUCH WITH OUR TEAM";
+$lang["Noussommesla"]="We are here to help you! You want to order! If you have any questions about our products and services or any other drone related questions, please send us your message via the contact form.";
+$lang["vousbesoinsdevous"]="you need to register first";
+
+
+
+$lang["DEPUISPLUSDE5ANS"]="FOR MORE THAN 5 YEARS, OUR CUSTOMERS HAVE TRUSTED US TO STUDY AND REALIZE THEIR DRONE PROJECT TOGETHER. WE OFFER DRONES AND DRONE SERVICES OF HIGH QUALITY AND PROFESSIONALISM WITH A PROVEN EXPERIENCE.";
+$lang["pardepuis"]="CREATIX STUDIO is a drone company 
+which intervenes everywhere in Morocco and in Africa. 
+With more than 5 years of experience in the service of 
+professionals in many sectors of activity 
+in many sectors of activity, it has developed a real expertise 
+in technical analysis and audiovisual production 
+audiovisual production. Forerunner in Morocco, 
+CREATIX STUDIO is regularly brought to collaborate 
+to collaborate with large Moroccan companies 
+companies for the realization of shots";
 
 ?>

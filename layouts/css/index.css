@@ -1,31 +1,25 @@
 
-
-
-
-
-.carousel-item img{
-width: 100%;
-height:50%;
-z-index: 25;
-
+.imagesindex{
+    height: 100vh;
+    width: 100vw;
+    box-shadow:  0 21px 101px rgb(0 0 0), 0 0 6px rgb(202 151 187 / 64%)
+}
+.indeximages{
+    position: absolute;
+    top:50%;
+    color: rgba(204, 203, 203, 0.281);
 
 }
-.carousel-item{
-    height: 100%;
-}
-.carousel-caption{
-    font-size: 20px;
-    text-align: left;
-    text-transform: uppercase;
-    text-overflow: hidden;
-    text-shadow: rgb(113, 204, 235);
-    color:rgb(255, 255, 255);
-    z-index: 27;
-}
-.carousel-inner{
-    height: 100%;
-}
+.indeximages h2{
+  letter-spacing: 5px;
+  font-size:40px;
 
+}
+.indeximages h1{
+    letter-spacing: 5px;
+    font-size: 30px;
+  
+  }
 
 /* Body index*/
 .bodyIndex .contenu h2 {
@@ -165,3 +159,67 @@ ul.a{
     border-top-right-radius: calc(.25rem - 1px);
     border-radius: 3%;
 }
+.pulse-danger {
+    box-shadow: 0 0 0 rgb(220 53 69 / 50%);
+    animation: pulse-danger 2s infinite;
+}
+
+@media (max-width: 576px) {  
+    .imagesindex{
+        height:0%;
+        width: 100vw;
+     
+    }
+    .indeximages{
+        opacity: 0;
+        
+    }
+
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (max-width: 768px) {  
+    .imagesindex{
+        height:0%;
+        width: 100vw;
+     
+    }
+    .indeximages{
+        opacity: 0;
+    }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .imagesindex{
+        height:0%;
+        width: 100vw;
+     
+    }
+    .indeximages{
+        opacity: 0;
+    }
+}
+ 
+@media (max-width: 1265px) { 
+    .imagesindex{
+        height:0%;
+        width: 100vw;
+     
+    }
+    .indeximages{
+        opacity: 0;
+    }
+}
+@media (max-width: 1506px) { 
+    .imagesindex{
+        height:0%;
+        width: 100vw;
+     
+    }
+    .indeximages{
+        opacity: 0;
+    }
+}
+ 

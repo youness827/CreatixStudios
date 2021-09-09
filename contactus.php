@@ -10,22 +10,23 @@ if (isset($_POST["envoyermsg"])) {
 
         if (isset($_SESSION["USER"]) && isset($_SESSION["iduser"])) {
                 $msgenv = htmlspecialchars(trim($_POST["msgs"]));
-                $stmt=$con->prepare("INSERT INTO meassagrie (ID_CLIENT,ID_CREATIX,DESCRIPTION ) values (?,?,?) ");
-                $stmt->execute(array($_SESSION["iduser"],1,$msgenv));
+                $stmt=$con->prepare("INSERT INTO meassagrie (ID_CLIENT,ID_CREATIX,DESCRIPTION,datemsg ) values (?,?,?,?) ");
+                $stmt->execute(array($_SESSION["iduser"],1,$msgenv,date('y-m-d')));
                
                 $count=$stmt->rowCount();
                 if($count>0){
-                                $msg="envoyer le message términer";
                     ?>
-                    <script>
-                                
-                        window.location.href="contactus.php?lang=<?php if(isset($_GET["lang"])) echo $_GET["lang"];?>";          
+                    <script type="module">
+                        swal({
+                       title:"envoyer le message",
+                       text: "le message bien envoyer",
+                       icon: "success",
+                       });                   
                      </script>
-              
-      
-            
-            
-                    <?php   
+           
+                   
+           
+                    <?php 
                             
                 
                 }else{
@@ -59,19 +60,10 @@ if (isset($_POST["envoyermsg"])) {
         <div class="row">
             <div class="col">
                 <h2 class="text-left fw-normal">creatix studio
-                    Leader des drones au maroc</h2>
+                   <?=$lang["LEADER"]?> </h2>
                 <br>
                 <h5 class="text-left text-muted fw-normal">
-                    CREATIX STUDIO est une entreprise de drone
-                    qui intervient partout au Maroc et en Afrique.
-                    Forte de plus de 5 ans expérience au service
-                    des professionnels dans de nombreux secteurs
-                    d’activité, elle a développé une véritable expertise
-                    dans l’analyse technique et la production
-                    audiovisuelle. Précurseur au Maroc,
-                    CREATIX STUDIO est régulièrement amenée
-                    à collaborer avec de grandes entreprises
-                    marocaines pour la réalisation de prises de vue
+                <?=$lang["paragcont"]?>
                 </h5>
                 <br>
                 <div class="contact-info">
@@ -97,11 +89,11 @@ if (isset($_POST["envoyermsg"])) {
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="text-center fw-bolder" style="font-size:40px">ENTRER EN CONTACT AVEC NOTRE ÉQUIPE</h1>
+                <h1 class="text-center fw-bolder" style="font-size:40px"><?=$lang["ENTRERENCONTACT"]?></h1>
                 <br>
                 <h5 class="text-center text-muted fw-normal">
-                    Nous sommes là pour vous aider! vous souhaitez commander! Si vous avez des questions concernant nos produits et services ou toute autre question relative aux drones, veuillez nous envoyer vous messages via le formulaire de contact.
-                    <a href="login.php?lang=<?php if (isset($_GET["lang"])) echo $_GET["lang"]; ?>" class="text-danger">vous besoins de vous inscrivez d'abord</a>
+                  <?=$lang["Noussommesla"]?>
+                    <a href="login.php?lang=<?php if (isset($_GET["lang"])) echo $_GET["lang"]; ?>" class="text-danger"><?= $lang["vousbesoinsdevous"]?></a>
 
                 </h5>
                 <br><br><br>
@@ -114,7 +106,7 @@ if (isset($_POST["envoyermsg"])) {
                     </div>
                     <br> <br>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <input type="submit" class="btn btn-outline-danger btn-md me-md-2" name="envoyermsg" value="ENVOYER MESSAGE">
+                        <input type="submit" class="btn btn-outline-danger btn-md me-md-2" name="envoyermsg" value="MESSAGE">
 
                     </div>
                 </form>
@@ -152,19 +144,10 @@ if (isset($_POST["envoyermsg"])) {
     <div class="container">
         <div class="row">
             <div class="col">
-                <h4 class="text-left fw-bolder">DEPUIS PLUS DE 5 ANS, NOS CLIENTS NOUS FONT CONFIANCE POUR ÉTUDIER ET RÉALISER ENSEMBLE LEUR PROJET DRONE. NOUS OFFRONS DES DRONES ET DES PRESTATIONS DE SERVICE DRONE DE HAUT NIVEAU TANT EN QUALITÉ QU’EN PROFESSIONNALISME AVEC UNE EXPÉRIENCE CONFIRMÉE.</h4>
+                <h4 class="text-left fw-bolder"><?=$lang["DEPUISPLUSDE5ANS"]?></h4>
                 <br>
                 <h5 class="text-left text-muted fw-normal">
-                CREATIX STUDIO est une entreprise de drone 
-qui intervient partout au Maroc et en Afrique. 
-Forte de plus de 5 ans expérience au service 
-des professionnels dans de nombreux secteurs 
-d’activité, elle a développé une véritable expertise 
-dans l’analyse technique et la production 
-audiovisuelle. Précurseur au Maroc, 
-CREATIX STUDIO est régulièrement amenée 
-à collaborer avec de grandes entreprises 
-marocaines pour la réalisation de prises de vue
+          <?= $lang["pardepuis"] ?>
                 </h5>
                 <br><br><br>
 

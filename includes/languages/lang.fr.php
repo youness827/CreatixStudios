@@ -15,7 +15,7 @@ $lang["nofromation"]="Nos Formation";
 
 $lang["proposdenous"]="Propos de nous";
 
-$lang["nouscontacter"]="Nous Contacter";
+$lang["nouscontacter"]="contactez nous";
 
 $lang["télephoner"]="Téléphoner";
 
@@ -70,6 +70,22 @@ $lang["danslasécurité"]="Dans la sécurité";
 $lang["aménagementduterritoire"]="Pour l’aménagement du territoire";
 $lang["dronedinspection"]="Le drone d’inspection";
 $lang["laudiovisuel"]="les métiers de l’audiovisuel";
+
+$lang["NOUSSOMMES"]="NOUS SOMMES SUR LA QUALITÉ ET LA CONFIANCE.";
+
+$lang["QUALITÉ"]="QUALITÉ";
+$lang["qualitepar"]="nos services sont de haute qualité, et nous continuons à améliorer nos processus pour toujours répondre à vos attentes";
+
+$lang["PROFESSIONNEL"]="PROFESSIONNEL";
+$lang["profpar"]="une équipe de professionnels experts est à votre disposition pour vous écouter, vous assister et réussir ensemble vos projets";
+
+$lang["CONFIANCE"]="CONFIANCE";
+$lang["confpar"]="vous nous confiez vos projets, nous seront à la hauteur de votre confiance et nous traiterons vos projets dans la totale discrétion.";
+
+
+
+
+
 
 /*----------------------------*/
 $lang["DRONEAVANTAGESSOLUTIONSPERSONNALISÉES"]="DRONE AVANTAGES & SOLUTIONS PERSONNALISÉES";
@@ -238,5 +254,157 @@ $lang["conditiondemende"]="pour pouvoir passer votre commande vous besoins de vo
 $lang["nosservice"]="Nos service";
 
 $lang["demander"]="Envoyer";
+
+
+
+
+
+/**/
+$lang["contacter"]="Pour nous contacter, cliquer ici";
+
+
+
+
+
+
+
+/*prpose de nous*/
+$lang["LEADER"]="LEADER DES DRONES AU MAROC";
+$lang["quisomme"]="QUI SOMME NOUS ?";
+
+$lang["dronesol"]=" Drone Solution Industrie";
+$lang["Opérateur"]="Opérateur de drone au service des professionnels";
+$lang["opérateutpar"]="CREATIX STUDIO est une entreprise de drone
+qui intervient partout au Maroc et en Afrique. <br>
+Forte de plus de 5 ans expérience au service
+des professionnels dans de nombreux secteurs
+d’activité, elle a développé une véritable expertise
+dans l’analyse technique et la production
+audiovisuelle. <br> Précurseur au Maroc,
+CREATIX STUDIO est régulièrement amenée
+à collaborer avec de grandes entreprises
+marocaines pour la réalisation de prises de vue ";
+
+$lang["proposeservice"]="Propose des services de photogrammétrie par
+drone pour la création de modèles 3D afin de
+fournir des données techniques utiles aux relevés topographiques, ou encore à la conception de
+plan. <br> <br> L’entreprise a également recours à la thermographie par drone. Cette technique est utilisée
+dans l’inspection de panneaux photovoltaïques, la
+détection de fuites de chaleur et la réalisation de
+diagnostic thermique. <br> <br> Mobilité et du champ d’action étendu sont les principaux atouts du drone.
+C’est un outil indispensable pour atteindre des
+zones inaccessibles. br C’est pourquoi
+CREATIX STUDIO réalise des inspections par drone
+d’ouvrages, toitures, éoliennes, sites industriels.";
+
+$lang["faitpartie"]="fait partie des entreprises pionnières au Maroc ";
+$lang["imagerie"]="L’imagerie aérienne au service d’une clientèle variée";
+$lang["prestationpardrone"]="Les prestations par drone de CREATIX STUDIO sont susceptibles d’intéresser tout
+type de public. La société ne se contente pas de travailler avec des clients au niveau
+local, puisque son secteur de prestation s’étend à l’échelle nationale et internationale. <br>
+Régulièrement sollicitée pour des prestations de photogrammétrie et de
+thermographie,
+CREATIX STUDIO a su élargir son champ d’action et s’entourer de partenaires complémentaires à son activité afin de répondre à différents types de clients. <br> L’objectif
+: fournir aux professionnels le support visuel et les données dont ils ont besoin. <br> À la
+recherche d’un outil de communication efficace et d’un support visuel réalisé dans
+une esthétique irréprochable, les professionnels de l’immobilier, du tourisme pour
+communiquer autour d’événements locaux ou valoriser les attraits touristiques d’une
+région. <br> L’arrivée du drone dans le domaine de l’image a provoqué une petite révolution. <br>
+En effet, cet appareil a ouvert la voie à un type de photo jusque-là réservé aux pilotes
+d’hélicoptères, ULM et autres engins volants : la photo aérienne. <br> Aujourd’hui, c’est un
+outil indispensable et un vrai atout pour de nombreux professionnels. <br> Le drone est de
+nature un allié précieux en termes de mobilité. En allant où le photographe ne peut
+aller, il permet de photographier un sujet sous des angles inédits. Saisir un lieu dans
+son ensemble, ancrer un élément dans un décor, promouvoir un patrimoine matériel
+ou naturel… <br><br>
+Si les possibilités sont infinies, le résultat“ est toujours au rendez vous.
+En photo aérienne, le champ des possibles est large. Parmi les prestations par drone
+que propose CREATIX STUDIO, on trouve notamment la création de panoramiques
+aériens à 180° ainsi que des visites virtuelles à 360°. Un format percutant,
+efficace pour valoriser un sujet et marquer le spectateur.";
+$lang["pourquoi"]="Pour quoi choisir creatix studio ?";
+$lang["exper"]="Expérience dans le domaine de la prise de
+vue par drone";
+$lang["Spécialistédelaprise"]="  Spécialisté de la prise de 
+vue aérienne depuis 5 ans 
+Qu’est-ce que la prise de 
+vue aérienne";
+$lang["Noussommes"]="  Nous sommes équipés des drones les 
+plus récents du marché. Ces aéronefs 
+sont équipés de caméra ou de cap- teurs photo capables de capturer des 
+images en haute qualité,dédiés à la 
+réalisation
+de photographies et vidéos aériennes. 
+<br><br>
+Les prises de vue sont vouées à être 
+exploiter par tout type de support de 
+diffusion : télévision, cinéma, Web, 
+papier, etc.. 
+Afin de toujours vous garantir une 
+prestation répondant à vos exigences, 
+nous veillons à capter les meilleures 
+vues aériennes du décollage jusqu’à 
+l’atterrissage.
+<br>
+Creatix studio, forte de ses 5 ans d’expérience et toujours à la pointe de la 
+technologie, vous propose quatre 
+types d’interventions.";
+
+$lang["Pourplusdétails"]="Pour plus détails , cliquer ici";
+
+$lang["Modélisation3Dpardrone"]="Modélisation 3D par drone";
+$lang["Photogrammétrie"]="Photogrammétrie";
+$lang["Prestationspardrone"]="Prestations par drone pour 
+l’immobilier";
+$lang["inspectiontemp"]="Inspection en temps réel";
+$lang["Orthophotographieaérienne"]="Orthophotographie aérienne";
+$lang["Réalitévirtuelle"]="Réalité virtuelle par drone";
+$lang["inspectionouvrage"]="inspection d’ouvrage";
+$lang["sécuritébâtiment"]="sécurité d’un bâtiment";
+
+
+$lang["Fondateur"]="Fondateur";
+$lang["fondateurpar"]="  <li>Pilotage de drone ,Prise de vue aérienne </li>
+<li> Photogrammétrie par drone</li>
+<li>Prise de vue sous-marine Prise de vue au sol Photographie</li>
+<li>Montage vidéo Infographie Retouche photo</li> 
+<li> I.U.L.M </li>
+<li>D.G.A.C
+</li>";
+
+/* contacter us */ 
+
+$lang["paragcont"]=" CREATIX STUDIO est une entreprise de drone
+qui intervient partout au Maroc et en Afrique.
+Forte de plus de 5 ans expérience au service
+des professionnels dans de nombreux secteurs
+d’activité, elle a développé une véritable expertise
+dans l’analyse technique et la production
+audiovisuelle. Précurseur au Maroc,
+CREATIX STUDIO est régulièrement amenée
+à collaborer avec de grandes entreprises
+marocaines pour la réalisation de prises de vue";
+$lang["ENTRERENCONTACT"]="ENTRER EN CONTACT AVEC NOTRE ÉQUIPE";
+$lang["Noussommesla"]="Nous sommes là pour vous aider! vous souhaitez commander! Si vous avez des questions concernant nos produits et services ou toute autre question relative aux drones, veuillez nous envoyer vous messages via le formulaire de contact.";
+$lang["vousbesoinsdevous"]="vous besoins de vous inscrivez d'abord";
+
+$lang["DEPUISPLUSDE5ANS"]="DEPUIS PLUS DE 5 ANS, NOS CLIENTS NOUS FONT CONFIANCE POUR ÉTUDIER ET RÉALISER ENSEMBLE LEUR PROJET DRONE. NOUS OFFRONS DES DRONES ET DES PRESTATIONS DE SERVICE DRONE DE HAUT NIVEAU TANT EN QUALITÉ QU’EN PROFESSIONNALISME AVEC UNE EXPÉRIENCE CONFIRMÉE.";
+$lang["pardepuis"]="CREATIX STUDIO est une entreprise de drone 
+qui intervient partout au Maroc et en Afrique. 
+Forte de plus de 5 ans expérience au service 
+des professionnels dans de nombreux secteurs 
+d’activité, elle a développé une véritable expertise 
+dans l’analyse technique et la production 
+audiovisuelle. Précurseur au Maroc, 
+CREATIX STUDIO est régulièrement amenée 
+à collaborer avec de grandes entreprises 
+marocaines pour la réalisation de prises de vue";
+
+
+
+
+
+
+
 
 ?>

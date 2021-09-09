@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,400&family=Crimson+Text:ital,wght@1,600&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*{
+    overflow-x: hidden;
+    margin: 0;    
+    font-family: 'Nova Flat', cursive;   
+    scroll-behavior: smooth;
+}
+body{
+    background-color:white;
+    cursor: pointer;
+}
+
+button{
+    overflow: hidden;
+    background-color: aqua;
+}
+.contenu{
+    overflow: hidden;
+}
+.myimages{
+    width: 100%;
+}

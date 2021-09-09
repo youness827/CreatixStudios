@@ -1,0 +1,253 @@
+.about_us {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #00000000;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgb(10 7 9), 0 0 6px rgb(202 151 187 / 64%);
+    background-image: -webkit-linear-gradient(top, #fff, #606265a3);
+}
+
+.about_us h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    letter-spacing: 30px;
+    color: rgb(0 0 0);
+
+    font-weight: 900;
+    text-transform:uppercase;
+    margin: 50px auto;
+    padding: 50px ;
+}
+.about_us h2{
+    font-family: 'Bangers', cursive;
+    font-size: 70px;
+    letter-spacing: 30px;
+    color:rgb(255, 255, 255);
+    background-image: -webkit-linear-gradient(bottom, #58434303, #00ded400);
+    text-transform:uppercase;
+ 
+}
+.about_us h3{
+    font-family: 'Bangers', cursive;
+    font-size: 90px;
+    letter-spacing: 30px;
+    color: rgb(0 0 0);
+    background-image: -webkit-linear-gradient(bottom, #58434303, #00ded400);
+    text-transform: uppercase;
+ 
+}
+
+.to-bottom{
+
+    background-color: rgba(243, 243, 243, 0.856);
+    width: 80px;
+    height: 60px;
+    border-radius: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:38px;
+    color: rgb(35 93 107);
+
+     text-decoration: none;
+     opacity:1;
+     pointer-events: none;
+     transition: all .4s;
+     box-shadow: 10px 10px 10px  rgba(236, 108, 108, 0.438);
+     z-index: 2000;
+     overflow: hidden;
+
+     vertical-align: bottom;
+ }
+
+
+ 
+
+
+ 
+ 
+ @media (max-width: 765px) { 
+
+    .about_us h1 {
+      
+        font-family: 'Bangers', cursive;
+        font-size: 20px;
+        letter-spacing: 10px;
+        color: rgb(0 0 0);
+
+        font-weight: 900;
+        text-transform:uppercase;
+        margin: 30px auto;
+        padding: 30px ;
+        transition: all 0.4s;
+
+    }
+    .about_us h2{
+        font-family: 'Bangers', cursive;
+        font-size: 15px;
+        letter-spacing: 10px;
+        color:rgb(255, 255, 255);
+        background-image: -webkit-linear-gradient(bottom, #58434303, #00ded400);
+        text-transform:uppercase;
+        transition: all 0.4s;
+        
+
+     
+    }
+    .about_us h3{
+        font-family: 'Bangers', cursive;
+        font-size:15px;
+        letter-spacing: 10px;
+        color: rgb(0 0 0);
+        background-image: -webkit-linear-gradient(bottom, #58434303, #00ded400);
+        text-transform:uppercase;
+        transition: all 0.4s;
+     
+    }
+    .to-bottom{
+
+        background-color: rgba(243, 243, 243, 0.856);
+        width: 49px;
+        height: 30px;
+        border-radius: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:20px;
+        color: rgb(35 93 107);
+    
+         text-decoration: none;
+         opacity:1;
+         transition: all .4s;
+         box-shadow: 10px 10px 10px  rgba(236, 108, 108, 0.438);
+         z-index: 2000;
+         overflow: hidden;
+    
+         vertical-align: bottom;
+     }
+    
+  }
+
+  .img-fluid{
+width: 100%; 
+height: 100%; } 
+
+.cardabout{
+    border: none;
+
+}
+.about h1{
+    font-family: 'Bangers', cursive;
+    font-size: 50px;
+    letter-spacing: 30px;
+    color: rgb(0 0 0);
+
+    font-weight: 900;
+    text-transform:uppercase;
+    color: rgba(206, 91, 15, 0.801);
+ 
+}
+.myfondateurcard{
+    height: 73%;
+   
+    box-shadow: 0 6px 20px rgb(167 0 69), 0 0 6px rgb(202 151 187 / 64%);
+
+}
+.aboutcard{
+
+    background: rgb(255 254 254 / 7%);
+    box-shadow: 0 6px 10px rgb(0 125 243 / 37%), 0 0 6px rgb(253 0 0);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+
+    
+}
+
+.myimgabout{
+    border-radius: 15%;
+    height: 40%;
+    transition: all 0.4s;
+    overflow: hidden;
+
+}
+
+.myimgabout22 {
+    height: 51%;
+    width: 45%;
+   
+
+}
+
+
+
+@media (min-width: 576px) {  
+ 
+
+    .myimgabout{
+        border-radius: 0%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .myimgabout{
+        border-radius: 0%;
+        height: 100%;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .myimgabout{
+        border-radius: 0%;
+        height: 30%;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+
+}
+ 
+@media (max-width: 950px) { 
+    .myimgabout{
+        border-radius: 0%;
+        height: 79%;
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+
+}
+.about__ h1{
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+   letter-spacing: 2px;
+    font-weight: 900;
+    text-transform:uppercase;
+    color: rgba(206, 91, 15, 0.801);
+}
+.about__ h2{
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+   letter-spacing: 5px;
+    text-transform:capitalize;
+    color: rgba(53, 52, 52, 0.801);
+}
+
+#hh{
+    font-size: 108px;
+    overflow: hidden;
+    
+}#hh i{
+    color:#020202;
+    overflow: hidden;
+    
+}

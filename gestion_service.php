@@ -193,7 +193,7 @@ swal({
                     <div class="row g-0">
                         <div class="col-lg-7"> 
                             <br><br>
-                            <img class="img-fluid rounded-start" src="<?php echo $images ?>addserv.png">
+                            <img class="myimages" src="<?php echo $images ?>addserv.png">
 
                         </div>
                         <div class="col-lg-5">
@@ -203,7 +203,7 @@ swal({
                                     <br><br> <br>
                                     <h2 class="text-center ">nouveau services</h2>
                                     <br>
-                                    <h5 class="text-danger text-center"><?php if(isset($msgs)) echo $msgs;?></h5>
+                                    <h5 class="text-danger text-center "><?php if(isset($msgs)) echo $msgs;?></h5>
                                     <h5 class="text-left  text-muted">en français</h5>
                                     <div class="mb-3">
                                         <div class="inputwithicon"> 
@@ -280,7 +280,7 @@ swal({
                                     
 
                                     </div> <br> 
-                            <div class="table-responsive-md">
+                            <div class="table-responsive-xl">
 
                                 <table class="table table-bordered  table-hover" style="width: 100%;">
                                        
@@ -371,7 +371,7 @@ swal({
                 <div class="card mb-3" style="width:100%">
                     <div class="row g-0">
                         <div class="col-lg-7"><br><br><br><br><br>
-                            <img class="img-fluid rounded-start" src="<?php echo $images ?>upd.png">
+                            <img class="myimages" src="<?php echo $images ?>upd.png">
 
                         </div>
                         <div class="col-lg-5">

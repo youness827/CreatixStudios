@@ -1,0 +1,54 @@
+.sp{
+    font-weight: 800;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.733);
+}
+h3{
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: 20px;
+    color: rgb(37, 42, 97);
+}
+.img{
+  width:100%
+} 
+
+.mycards{
+  border-radius: 7%;
+  background: rgb(245 239 239 / 41%);
+  box-shadow: 0 6px 10px rgb(0 0 0 / 51%), 0 0 6px rgb(123 119 119 / 42%);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+  transition: all 0.5s
+}
+
+.mycards:hover{
+   transform: scale(1.2);
+   box-shadow: 0 6px 20px rgb(156, 148, 155), 0 0 6px rgba(110, 110, 110, 0.637);
+   background-color: rgba(240, 224, 235, 0.171);
+   transition: all 0.3s;
+   
+}
+
+.border {
+  border: 1px solid #ff00cc96!important;
+}
+
+.mycardcards{
+  border-radius: 7%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 6px 10px rgb(0 0 0 / 64%), 0 0 6px rgb(212 212 212);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.mycardcards:hover{
+  transform: scale(1.2);
+  box-shadow: 0 6px 20px rgb(158, 158, 158), 0 0 6px rgba(255, 255, 255, 0.637);
+  background-color: rgba(243, 242, 243, 0.445);
+  transition: all 0.3s;
+  
+}

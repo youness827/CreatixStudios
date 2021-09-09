@@ -193,7 +193,7 @@ swal({
                     <div class="row g-0">
                         <div class="col-lg-7"> 
                             <br><br>
-                            <img class="img-fluid rounded-start" src="<?php echo $images ?>forma.png">
+                            <img class="myimages" src="<?php echo $images ?>forma.png">
 
                         </div>
                         <div class="col-lg-5">
@@ -280,7 +280,7 @@ swal({
                                     
 
                                     </div> <br> 
-                            <div class="table-responsive-md">
+                            <div class="table-responsive-xl">
 
                                 <table class="table table-bordered  table-hover" style="width: 100%;">
                                        
@@ -371,7 +371,7 @@ swal({
                 <div class="card mb-3" style="width:100%">
                     <div class="row g-0">
                         <div class="col-lg-7"><br><br><br><br><br>
-                            <img class="img-fluid rounded-start" src="<?php echo $images ?>upd.png">
+                            <img class="myimages" src="<?php echo $images ?>upd.png">
 
                         </div>
                         <div class="col-lg-5">
