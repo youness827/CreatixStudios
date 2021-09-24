@@ -25,13 +25,13 @@ $mail = new PHPMailer();
   $mail->isSMTP();                                            //Send using SMTP
   $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
   $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-  $mail->Username   = 'younessradid99@gmail.com';                     //SMTP username
-  $mail->Password   = '0697021246';                               //SMTP password
+  $mail->Username   = 'creatixstudiocontact@gmail.com';                     //SMTP username
+  $mail->Password   = 'creatixstudio123123';                               //SMTP password
   $mail->SMTPSecure = "ssl";            //Enable implicit TLS encryption
   $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
   $mail->Subject="testing";
   
-  $mail->setFrom('younessradid99@gmail.com');
+  $mail->setFrom('creatixstudiocontact@gmail.com');
   $mail->isHTML(true);
 
   $mail->Body="<h1> Creatix Center</h1> <br><br><h2>Verification Code : ". $codeVerification ."</h2></div>" ;
